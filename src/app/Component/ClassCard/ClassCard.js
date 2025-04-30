@@ -47,7 +47,7 @@ export default function CreateMeetingPage({classData}) {
 
 <div
     className="max-w-6xl     sm:mx-auto md:mx-18 lg:mx-auto xl:mx-auto mt-16 bg-white shadow-xl rounded-lg text-gray-900">
-    <div className="rounded-t-lg h-[340px] overflow-hidden">
+    <div className="rounded-t-lg h-[340px] lg:h-[420px] overflow-hidden">
     <img
   className="object-cover object-top w-full" 
   src={backgroundImgForToday} 
@@ -56,7 +56,7 @@ export default function CreateMeetingPage({classData}) {
   height={300} 
 />
     </div>
-    <div className="mx-auto w-32 h-32 relative -mt-16 border-4 border-white rounded-full overflow-hidden">
+    <div className="mx-auto w-32 h-36  relative -mt-16 border-4 border-white rounded-full overflow-hidden">
         {/* <img className="object-cover object-center h-32" src='https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt='Woman looking front'/> */}
     </div>
     <div className="text-center mt-2">
