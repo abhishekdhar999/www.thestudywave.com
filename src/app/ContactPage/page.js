@@ -69,7 +69,7 @@ const ContactPage = () => {
                     Get In <span className="text-indigo-600">Touch</span>
                 </h3>
                 <p className="mt-4 leading-7 text-gray-200">
-                At StudyWave, we understand how important your childs education is. If you have any questions or need assistance, feel free to reach out. Our team is committed to providing the best support and guidance to ensure your child's learning journey is smooth and successful. Were here for you every step of the way!
+                At StudyWave, we understand how important your childs education is. If you have any questions or need assistance, feel free to reach out. Our team is committed to providing the best support and guidance to ensure your childs learning journey is smooth and successful. Were here for you every step of the way!
                 </p>
     
                 <div className="flex items-center mt-5">

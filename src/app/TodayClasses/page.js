@@ -1,6 +1,4 @@
-
 'use client';
-
 import { DynaPuff } from "next/font/google";
 import { useEffect, useState } from "react";
 import ClassCard from "../Component/ClassCard/ClassCard.js"
@@ -48,9 +46,8 @@ export default function TodayClasses() {
         <div className="flex flex-col items-center justify-center p-6 md:p-12">
           <div className="max-w-[800px] text-center">
             <p className={`text-6xl md:text-7xl mt-18 lg:text-7xl font-bold text-black ${DynaPuffs.className}`}>
-              "Bringing classroom concepts to life through interactive learning"
+              Bringing classroom concepts to life through interactive learning
             </p>
-          </div>
 
           <div className="max-w-[600px] mt-6 text-center">
             <p className="text-lg font-bold md:text-xl text-black">
@@ -189,23 +186,10 @@ export default function TodayClasses() {
   </div>
 </div>
 </div>
-
-
         {/* Today's Classes Banner */}
         <div className="m-12 md:m-18 flex justify-center">
           <img className="rounded-3xl w-full max-w-5xl" src="https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/main/todayclaseesbanner.png?raw=true" alt="Today's Classes Banner" />
         </div>
-
-        {/* Welcome Section */}
-        {/* <div className="text-black text-center p-6">
-          <h2 className={`text-4xl md:text-5xl ${DynaPuffs.className}`}>
-            hola namaste welcome
-          </h2>
-          <h1 className="text-5xl font-serif md:text-8xl font-extrabold mt-4">
-            {loggedInUser?.name}
-          </h1>
-        </div> */}
-
         {/* Today's Classes Cards */}
         <div className="">
           {todayClasses.length > 0 ? (
