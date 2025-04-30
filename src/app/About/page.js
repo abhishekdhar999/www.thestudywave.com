@@ -12,15 +12,15 @@ const AboutSection = forwardRef(function AboutSection(props, ref) {
           <div className="relative w-full lg:w-1/2 flex justify-center">
             <div className="relative">
               <img
-                src="/math.jpg"
+                src="https://raw.githubusercontent.com/imAbhishekRao/Photos_storage_for_clients/refs/heads/main/45f28e60-ed48-4f28-ba0c-48863492a622.jpg"
                 alt="Student"
                 className="w-80 rounded-lg shadow-lg"
               />
-              <img
+              {/* <img
                 src="/math.jpg"
                 alt="Studying"
                 className="w-64 rounded-lg shadow-lg absolute -bottom-16 right-0 border-4 border-white"
-              />
+              /> */}
             </div>
           </div>
 
@@ -142,8 +142,40 @@ const AboutSection = forwardRef(function AboutSection(props, ref) {
         <div className="lg:w-1/2">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {[
-              "/grid1.jpg", "/grid2.jpg", "/english.jpg", "/grid3.jpg", "/grid2.jpg", "/grid1.jpg",
-              "/grid3.jpg", "/grid4.avif", "/math.jpg", "/grid3.jpg", "/grid1.jpg", "/back9.jpg", "/back9.jpg", "/back9.jpg", "/back9.jpg"
+              // 1
+              "https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/main/gg1.jpg?raw=true",
+
+// 2
+               "https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/main/gg2.jpg?raw=true",
+
+// 3
+                "https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/main/gg3.jpg?raw=true",
+                
+                // 4
+                "https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/main/gg13.jpg?raw=true"
+                ,
+                // 5
+                "https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/main/gg6.jpg?raw=true"
+                ,
+                // 6
+                "https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/main/gg7.jpg?raw=true",
+
+// 7
+
+"https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/main/gg8.jpg?raw=true"
+,
+              // 8
+              "https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/main/gg10.jpg?raw=true"
+              ,
+              // // 9
+              // "https://raw.githubusercontent.com/imAbhishekRao/Photos_storage_for_clients/refs/heads/main/gg9.webp",
+              // // 10
+              // "https://raw.githubusercontent.com/imAbhishekRao/Photos_storage_for_clients/refs/heads/main/gg11.avif",
+              // // 11
+              // "https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/main/gg12.jpg?raw=true", 
+              // // 12
+              // "https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/main/gg4.jpg?raw=true"
+              , 
             ].map((img, i) => (
               <div key={i}>
                 <img

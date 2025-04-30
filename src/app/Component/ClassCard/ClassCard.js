@@ -13,9 +13,9 @@ export default function CreateMeetingPage({classData}) {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
-const startUrl = "https://us05web.zoom.us/s/89259107481?zak=eyJ0eXAiOiJKV1QiLCJzdiI6IjAwMDAwMSIsInptX3NrbSI6InptX28ybSIsImFsZyI6IkhTMjU2In0.eyJpc3MiOiJ3ZWIiLCJjbHQiOjAsIm1udW0iOiI4OTI1OTEwNzQ4MSIsImF1ZCI6ImNsaWVudHNtIiwidWlkIjoiX0lCZjJscnpTNm1JV1RFcF9aNWxZQSIsInppZCI6IjBjYjQ5YTlmNjFkZjQ5MjE5MGE2ZDQzYzcwYWU1Yzc3Iiwic2siOiIwIiwic3R5IjoxMDAsIndjZCI6InVzMDUiLCJleHAiOjE3NDQxNDcxNzksImlhdCI6MTc0NDEzOTk3OSwiYWlkIjoiWGpNUlhCczBUaGUyVk5ieW0yMVpRZyIsImNpZCI6IiJ9.3zI068SzpODEdraDqmqU7tiUcZp2aXnpYDT7uZrFf20"
-
-const joinUrl =  "https://us05web.zoom.us/j/89259107481?pwd=jFtxx93uVEszoafUvqPTuRu4LTgIBQ.1"
+  const today = new Date().toLocaleDateString('en-US', { weekday: 'long' });
+  const subjectForToday = classData.daysAndSubjects[today];
+  const backgroundImgForToday = classData.daysAndBackgroungImg[today];
 
   const handleCreateMeeting = async () => {
     setLoading(true);
@@ -50,18 +50,18 @@ const joinUrl =  "https://us05web.zoom.us/j/89259107481?pwd=jFtxx93uVEszoafUvqPT
     <div className="rounded-t-lg h-[340px] overflow-hidden">
     <img
   className="object-cover object-top w-full" 
-  src={classData.backgroundImg} 
+  src={backgroundImgForToday} 
   alt="Mountain" 
   width={500} 
   height={300} 
 />
     </div>
     <div className="mx-auto w-32 h-32 relative -mt-16 border-4 border-white rounded-full overflow-hidden">
-        <img className="object-cover object-center h-32" src='https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt='Woman looking front'/>
+        {/* <img className="object-cover object-center h-32" src='https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt='Woman looking front'/> */}
     </div>
     <div className="text-center mt-2">
         <h2 className={` text-2xl font-serif  ${DynaPuffs.className}`}>{classData.title}</h2>
-        {/* <p className="text-gray-500"></p> */}
+        <p className="text-gray-500 text-2xl ">Subject : <span className="font-bold text-black">{subjectForToday}</span></p>
     </div>
 
     <div className="svgs flex justify-center flex-col md:flex-row pt-4"> 
@@ -143,9 +143,9 @@ style={{ fill: "#231e23" }}
 
     
     <div className="p-4 border-t mx-8 mt-2 flex justify-center md:gap-24 md:flex-row flex-col">
-    <div type="button" class="text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Join Class</div>
+    <div type="button" className="text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 cursor-pointer">Join Class</div>
 
-    <div type="button" class="text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Open Whiteboard</div>
+    <div type="button" className="text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 cursor-pointer">Open Whiteboard</div>
     </div>
     </div>
     </>

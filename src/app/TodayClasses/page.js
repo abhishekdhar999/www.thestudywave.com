@@ -1,124 +1,3 @@
-// 'use client';
-
-// import { DynaPuff } from "next/font/google";
-// import { useEffect, useState } from "react";
-// import ClassCard from "../Component/ClassCard/ClassCard.js"
-// import { classes, users } from "../Database/db.js";
-// import Navbar from "../Component/Navbar/Navbar.js";
-
-// const DynaPuffs = DynaPuff({
-//   weight: '400',
-//   subsets: ['latin'],
-//   display: 'swap',
-// });
-
-// const DynaPuffs2 = DynaPuff({
-//   weight: '600',
-//   subsets: ['latin'],
-//   display: 'swap',
-// });
-
-// export default function TodayClasses() {
-//   const [todayClasses, setTodayClasses] = useState([]);
-//   const [loggedInUser, setLoggedInUser] = useState();
-
-//   useEffect(() => {
-//     const refreshToken = localStorage.getItem("token");
-//     const user = users.find(user => user.refreshTokken === refreshToken);
-//     if (!user) return;
-
-//     setLoggedInUser(user);
-//     const userId = user._id;
-//     const isTeacher = user.role === "Teacher";
-//     const today = new Date().toLocaleDateString('en-US', { weekday: 'long' });
-
-//     const filtered = classes.filter(cls =>
-//       cls.days.includes(today) &&
-//       (isTeacher ? cls.teacher === userId : cls.students.includes(userId))
-//     );
-
-//     setTodayClasses(filtered);
-//   }, []);
-
-//   return (
-//     <>
-//       <Navbar />
-//       <div className="bg-[#ffe4d2]">
-//         <div>
-//           {/* Hero Section */}
-//           <div className="flex flex-col items-center justify-center p-6 md:p-12">
-//             <div className="max-w-[800px] text-center mt-16">
-//               <p className={`text-6xl md:text-7xl lg:text-7xl font-bold text-black ${DynaPuffs.className}`}>
-//                 &quot;Bringing classroom concepts to life through interactive learning&quot;
-//               </p>
-//             </div>
-
-//             <div className="max-w-[600px] mt-6 text-center">
-//               <p className="text-lg font-bold md:text-xl text-black">
-//                 From your first step into learning <span className="text-4xl font-extrabold">*</span> to the heights of your biggest achievements, 
-//                 we guide you to learn with passion, grow with confidence, and shine with purpose.
-//               </p>
-//             </div>
-
-//             <div className="flex justify-center md:gap-24 gap-6 m-12 md:flex-row flex-col">
-//               <div className="w-46 h-16 bg-green-300 border-2 border-black text-black rounded-full text-center flex justify-center items-center text-xl">
-//                 About us
-//               </div>
-
-//               <div className="w-46 h-16 bg-purple-300 border-2 border-black text-black rounded-full text-center flex justify-center items-center text-xl">
-//                 +91 8082810157
-//               </div>
-//             </div>
-
-//             {/* STUDYWAVE heading */}
-//             <h1 className={`mt-10 text-6xl md:text-8xl font-bold text-center ${DynaPuffs2.className}`}>
-//               <span className="image-textS">S</span>
-//               <span className="image-textT">T</span>
-//               <span className="image-textU">U</span>
-//               <span className="image-textD">D</span>
-//               <span className="image-textY">Y</span>
-//               <span className="image-textW">W</span>
-//               <span className="image-textA">A</span>
-//               <span className="image-textV">V</span>
-//               <span className="image-textE">E</span>
-//             </h1>
-//           </div>
-
-//           {/* Scrolling Carousel */}
-//           <div className="overflow-hidden whitespace-nowrap w-full">
-//             <div className="flex gap-24 animate-carousel">
-//               {/* Carousel images */}
-//               {['one', 'two', 'three', 'four', 'five', 'six'].map((img, index) => (
-//                 <div key={index} className={`relative min-w-[200px] w-[140vw] h-80 bg-${['rose', 'amber', 'blue', 'orange', 'purple', 'green'][index]}-300 rounded-full overflow-hidden`}>
-//                   <img src={`/${img}.png`} alt={`Student ${index + 1}`} className="absolute bottom-0 w-full object-cover h-72" />
-//                 </div>
-//               ))}
-//             </div>
-//           </div>
-
-//           {/* Today's Classes Banner */}
-//           <div className="m-12 md:m-18 flex justify-center">
-//             <img className="rounded-3xl w-full max-w-5xl" src="/todaysClassBanner.png" alt="Today's Classes Banner" />
-//           </div>
-
-//           {/* Today's Classes Cards */}
-//           <div>
-//             {todayClasses.length > 0 ? (
-//               <div>
-//                 {todayClasses.map(cls => (
-//                   <ClassCard key={cls._id} classData={cls} />
-//                 ))}
-//               </div>
-//             ) : (
-//               <div className="text-center text-xl text-gray-500">No classes today!</div>
-//             )}
-//           </div>
-//         </div>
-//       </div>
-//     </>
-
-//   );
-// }
 
 'use client';
 
@@ -186,7 +65,7 @@ export default function TodayClasses() {
 </div>
 
 <div className="w-46 h-16 bg-purple-300 border-2 border-black  text-black rounded-full text-center flex justify-center items-center text-xl">
-  +91 8082810157
++91 7740064839
 </div>
 </div>
 
@@ -212,7 +91,7 @@ export default function TodayClasses() {
   {/* First image */}
   <div className="relative min-w-[200px] max-w-[20vw]  h-80 bg-rose-300 rounded-t-full overflow-hidden">
     <img
-      src="/one.png"
+      src="https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/main/one.png?raw=true"
       alt="Student 1"
       className="absolute top-12 bottom-0 w-full object-cover h-72"
     />
@@ -221,7 +100,7 @@ export default function TodayClasses() {
   {/* Second image */}
   <div className="relative  min-w-[200px] w-[140vw] h-80 bg-amber-300 rounded-full overflow-hidden">
     <img
-      src="two.png"
+      src="https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/main/two.png?raw=true"
       alt="Student 2"
       className="absolute bottom-0 w-full object-cover h-72"
     />
@@ -229,7 +108,7 @@ export default function TodayClasses() {
 
   <div className="relative min-w-[200px] w-[140vw] h-80 bg-blue-400 rounded-4xl overflow-hidden">
     <img
-      src="three.png"
+      src="https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/main/three.png?raw=true"
       alt="Student 2"
       className="absolute bottom-0 w-full object-cover h-72"
     />
@@ -237,7 +116,7 @@ export default function TodayClasses() {
 
   <div className="relative min-w-[200px] w-[140vw] h-80 bg-orange-300 rounded-tl-full overflow-hidden">
     <img
-      src="four.png"
+      src="https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/main/four.png?raw=true"
       alt="Student 2"
       className="absolute left-9 bottom-0 w-full object-cover h-72"
     />
@@ -245,7 +124,7 @@ export default function TodayClasses() {
 
   <div className="relative min-w-[200px] w-[140vw] h-80 bg-purple-400 rounded-b-full overflow-hidden">
     <img
-      src="five.png"
+      src="https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/main/five.png?raw=true"
       alt="Student 2"
       className="absolute  bottom-0 w-full object-cover h-72"
     />
@@ -253,16 +132,16 @@ export default function TodayClasses() {
   
   <div className="relative min-w-[200px] w-[140vw] h-80 bg-green-300 rounded-full overflow-hidden">
     <img
-      src="six.png"
+      src="https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/main/gg6.jpg?raw=true"
       alt="Student 2"
-      className="absolute bottom-0 w-full object-cover h-72"
+      className="absolute bottom-0 w-full object-fit h-80"
     />
   </div>
 
   {/* First image duplicate */}
   <div className="relative min-w-[200px] w-[140vw] h-80 bg-rose-300 rounded-t-full overflow-hidden">
     <img
-      src="/one.png"
+      src="https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/main/one.png?raw=true"
       alt="Student 1"
       className="absolute top-12 bottom-0 w-full object-cover"
     />
@@ -271,7 +150,7 @@ export default function TodayClasses() {
   {/* Second image */}
   <div className="relative min-w-[200px]] w-[140vw] h-80 bg-amber-300 rounded-full overflow-hidden">
     <img
-      src="two.png"
+      src="https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/main/gg1.jpg?raw=true"
       alt="Student 2"
       className="absolute bottom-0 w-full object-cover h-72"
     />
@@ -279,7 +158,7 @@ export default function TodayClasses() {
 
   <div className="relative min-w-[200px] w-[140vw] h-80 bg-blue-400 rounded-4xl overflow-hidden">
     <img
-      src="three.png"
+      src="https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/main/three.png?raw=true"
       alt="Student 2"
       className="absolute bottom-0 w-full object-cover h-72"
     />
@@ -287,7 +166,7 @@ export default function TodayClasses() {
 
   <div className="relative min-w-[200px] w-[140vw] h-80 bg-orange-200 rounded-tl-full overflow-hidden">
     <img
-      src="four.png"
+      src="https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/main/four.png?raw=true"
       alt="Student 2"
       className="absolute left-9 bottom-0 w-full object-cover h-72"
     />
@@ -295,7 +174,7 @@ export default function TodayClasses() {
 
   <div className="relative min-w-[200px] w-[140vw] h-80 bg-purple-400 rounded-b-full overflow-hidden">
     <img
-      src="five.png"
+      src="https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/main/five.png?raw=true"
       alt="Student 2"
       className="absolute  bottom-0 w-full object-cover h-72"
     />
@@ -303,7 +182,7 @@ export default function TodayClasses() {
   
   <div className="relative min-w-[200px] w-[140vw] h-80 bg-green-300 rounded-full overflow-hidden">
     <img
-      src="six.png"
+      src="https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/main/gg6.jpg?raw=true"
       alt="Student 2"
       className="absolute bottom-0 w-full object-cover h-72"
     />
@@ -314,7 +193,7 @@ export default function TodayClasses() {
 
         {/* Today's Classes Banner */}
         <div className="m-12 md:m-18 flex justify-center">
-          <img className="rounded-3xl w-full max-w-5xl" src="/todaysClassBanner.png" alt="Today's Classes Banner" />
+          <img className="rounded-3xl w-full max-w-5xl" src="https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/main/todayclaseesbanner.png?raw=true" alt="Today's Classes Banner" />
         </div>
 
         {/* Welcome Section */}

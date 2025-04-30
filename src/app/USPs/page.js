@@ -26,7 +26,7 @@ const programs = [
       "Program interactive games",
       "Create an AI project",
     ],
-    image: "/path-to-your-image.png",
+    image: "https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/main/file_000000003160623086e395440abeeead.png?raw=true",
   },
   {
     title: "Competitive Exams",
@@ -38,7 +38,7 @@ const programs = [
       "Boost NAPLAN performance",
       "Crack SAT & other standardized tests",
     ],
-    image: "/path-to-competitive-exam-image.png",
+    image: "https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/main/file_00000000e6e86230936a7869575a6027.png?raw=true",
   },
 ];
 

@@ -4,7 +4,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { DynaPuff } from "next/font/google";
-
+import Link from "next/link";
 const DynaPuffs = DynaPuff({
   weight: '400',
   subsets: ['latin'],
@@ -56,13 +56,14 @@ export const HeroSection = () => {
                 we help students not just learn — but truly thrive.
               </span>
             </p>
-
+<Link href="/ContactPage">
             <div
               type="button"
               className="text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
             >
               Book Free Demo Class
             </div>
+            </Link>
 
             <div className="mt-6 flex flex-wrap justify-center gap-4 sm:gap-6 items-center ">
               <div className="flex justify-center items-center space-x-2">

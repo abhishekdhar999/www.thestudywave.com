@@ -2,7 +2,7 @@
 
 "use client";
 import { useRef } from 'react';
-
+import { Contact } from './ContactPage/page.js';
 import Navbar from './Component/Navbar/Navbar.js';
 import { HeroSection } from "./HeroSection/page";
 import USP from "../app/USPs/page";

@@ -225,8 +225,20 @@ const users = [
       recurring: true,
       createdAt: "2025-04-05T09:18:18.073+00:00",
       __v: 0,
+      daysAndSubjects: {
+        Tuesday: "Math",
+        Wednesday: "Math",
+        Thursday: "Math"
+      },
+      daysAndBackgroungImg:{
+        Tuesday: "https://marketplace.canva.com/EAFUOXXTZtU/1/0/1600w/canva-cute-white-welcome-to-math-class-youtube-intro-video-q2opAt8zpiM.jpg",
+        Wednesday: "https://marketplace.canva.com/EAFUOXXTZtU/1/0/1600w/canva-cute-white-welcome-to-math-class-youtube-intro-video-q2opAt8zpiM.jpg",
+        Thursday: "https://marketplace.canva.com/EAFUOXXTZtU/1/0/1600w/canva-cute-white-welcome-to-math-class-youtube-intro-video-q2opAt8zpiM.jpg"
+
+
+      },
       studentName:"SAMEH",
-      backgroundImg:"/math.jpg"
+      
     },
     {
       _id: "67f4eef492e54d81ddd7bc03",
@@ -241,8 +253,20 @@ const users = [
       passcode: "QqQp8s",
       createdAt: "2025-04-08T09:40:04.054+00:00",
       __v: 0,
+      daysAndSubjects: {
+        Tuesday: "Math",
+        Thursday: "Math",
+        Friday: "Math"
+      },
+      daysAndBackgroungImg:{
+        Tuesday: "https://marketplace.canva.com/EAFUOXXTZtU/1/0/1600w/canva-cute-white-welcome-to-math-class-youtube-intro-video-q2opAt8zpiM.jpg",
+        Thursday: "https://marketplace.canva.com/EAFUOXXTZtU/1/0/1600w/canva-cute-white-welcome-to-math-class-youtube-intro-video-q2opAt8zpiM.jpg",
+        Friday: "https://marketplace.canva.com/EAFUOXXTZtU/1/0/1600w/canva-cute-white-welcome-to-math-class-youtube-intro-video-q2opAt8zpiM.jpg"
+
+
+      },
       studentName:"SKAND",
-      backgroundImg:"/math.jpg"
+      
     },
     {
       _id: "67f4ef1392e54d81ddd7bc05",
@@ -258,7 +282,14 @@ const users = [
       createdAt: "2025-04-08T09:40:35.105+00:00",
       __v: 0,
       studentName:"DARIUS",
-      backgroundImg:"/math.jpg"
+      daysAndSubjects: {
+        Wednesday: "Math",
+        Friday: "Math"
+      },
+      daysAndBackgroungImg:{
+        Wednesday: "https://marketplace.canva.com/EAFUOXXTZtU/1/0/1600w/canva-cute-white-welcome-to-math-class-youtube-intro-video-q2opAt8zpiM.jpg",
+        Friday: "https://marketplace.canva.com/EAFUOXXTZtU/1/0/1600w/canva-cute-white-welcome-to-math-class-youtube-intro-video-q2opAt8zpiM.jpg"
+      },
     },
     {
       _id: "67f4ef3a92e54d81ddd7bc07",
@@ -274,7 +305,17 @@ const users = [
       createdAt: "2025-04-08T09:41:14.814+00:00",
       __v: 0,
       studentName:"RAHIL",
-      backgroundImg:"/math.jpg"
+      daysAndSubjects: {
+        Tuesday:"Math",
+        Wednesday: "Math",
+        Friday: "Math"
+      },
+      daysAndBackgroungImg:{
+        Tuesday:"https://marketplace.canva.com/EAFUOXXTZtU/1/0/1600w/canva-cute-white-welcome-to-math-class-youtube-intro-video-q2opAt8zpiM.jpg",
+        Wednesday: "https://marketplace.canva.com/EAFUOXXTZtU/1/0/1600w/canva-cute-white-welcome-to-math-class-youtube-intro-video-q2opAt8zpiM.jpg",
+        Friday: "https://marketplace.canva.com/EAFUOXXTZtU/1/0/1600w/canva-cute-white-welcome-to-math-class-youtube-intro-video-q2opAt8zpiM.jpg"
+      },
+      
     },
     {
       _id: "67f4ef4692e54d81ddd7bc09",
@@ -289,8 +330,18 @@ const users = [
       passcode: "comp101",
       createdAt: "2025-04-08T09:41:26.747+00:00",
       __v: 0,
+      daysAndSubjects: {
+        Tuesday:"Math",
+        Wednesday: "Math",
+        Friday: "Math"
+      },
+      daysAndBackgroungImg:{
+        Tuesday:"https://marketplace.canva.com/EAFUOXXTZtU/1/0/1600w/canva-cute-white-welcome-to-math-class-youtube-intro-video-q2opAt8zpiM.jpg",
+        Wednesday: "https://marketplace.canva.com/EAFUOXXTZtU/1/0/1600w/canva-cute-white-welcome-to-math-class-youtube-intro-video-q2opAt8zpiM.jpg",
+        Friday: "https://marketplace.canva.com/EAFUOXXTZtU/1/0/1600w/canva-cute-white-welcome-to-math-class-youtube-intro-video-q2opAt8zpiM.jpg"
+      },
       studentName:"SABRIYAH",
-      backgroundImg:"/math.jpg"
+      
     },
     {
       _id: "67f4ef5892e54d81ddd7bc0b",
@@ -305,8 +356,17 @@ const users = [
       passcode: "eco101",
       createdAt: "2025-04-08T09:41:44.578+00:00",
       __v: 0,
+      daysAndSubjects: {
+        Saturday:"Math",
+       Sunday: "Math",
+      },
+      daysAndBackgroungImg:{
+        Saturday:"https://marketplace.canva.com/EAFUOXXTZtU/1/0/1600w/canva-cute-white-welcome-to-math-class-youtube-intro-video-q2opAt8zpiM.jpg",
+        Sunday: "https://marketplace.canva.com/EAFUOXXTZtU/1/0/1600w/canva-cute-white-welcome-to-math-class-youtube-intro-video-q2opAt8zpiM.jpg",
+        
+      },
       studentName:"HAMSINI",
-      backgroundImg:"/math.jpg"
+      
     },
     {
       _id: "67f4ef6b92e54d81ddd7bc0d",
@@ -321,8 +381,18 @@ const users = [
       passcode: "codeit",
       createdAt: "2025-04-08T09:42:03.736+00:00",
       __v: 0,
+      daysAndSubjects: {
+        Saturday:"Math",
+        Sunday: "Math",
+        Monday: "Math"
+      },
+      daysAndBackgroungImg:{
+       Saturday:"https://marketplace.canva.com/EAFUOXXTZtU/1/0/1600w/canva-cute-white-welcome-to-math-class-youtube-intro-video-q2opAt8zpiM.jpg",
+       Sunday: "https://marketplace.canva.com/EAFUOXXTZtU/1/0/1600w/canva-cute-white-welcome-to-math-class-youtube-intro-video-q2opAt8zpiM.jpg",
+       Monday: "https://marketplace.canva.com/EAFUOXXTZtU/1/0/1600w/canva-cute-white-welcome-to-math-class-youtube-intro-video-q2opAt8zpiM.jpg"
+      },
       studentName:"SANJANA",
-      backgroundImg:"/english.jpg"
+     
 
     },
     {
@@ -338,8 +408,17 @@ const users = [
       passcode: "stats",
       createdAt: "2025-04-08T09:42:18.689+00:00",
       __v: 0,
+      daysAndSubjects: {
+     
+       Sunday: "Math",
+        Monday: "Math"
+      },
+      daysAndBackgroungImg:{
+        Sunday:"https://marketplace.canva.com/EAFUOXXTZtU/1/0/1600w/canva-cute-white-welcome-to-math-class-youtube-intro-video-q2opAt8zpiM.jpg",
+        Monday: "https://marketplace.canva.com/EAFUOXXTZtU/1/0/1600w/canva-cute-white-welcome-to-math-class-youtube-intro-video-q2opAt8zpiM.jpg",
+      },
       studentName:"TAHSIN",
-      backgroundImg:"/math.jpg"
+      
     },
     {
       _id: "67f4ef8e92e54d81ddd7bc11",
@@ -355,8 +434,16 @@ const users = [
       passcode: "market",
       createdAt: "2025-04-08T09:42:38.174+00:00",
       __v: 0,
+      daysAndSubjects: {
+        Monday:"Math",
+        Tuesday:"Math",
+      },
+      daysAndBackgroungImg:{
+        Tuesday:"https://marketplace.canva.com/EAFUOXXTZtU/1/0/1600w/canva-cute-white-welcome-to-math-class-youtube-intro-video-q2opAt8zpiM.jpg",
+        Monday: "https://marketplace.canva.com/EAFUOXXTZtU/1/0/1600w/canva-cute-white-welcome-to-math-class-youtube-intro-video-q2opAt8zpiM.jpg",
+      },
       studentName:"AARIT",
-      backgroundImg:"/math.jpg"
+     
     },
     {
       _id: "67f5218f57bbba5806a41e7f",
@@ -372,8 +459,18 @@ const users = [
       passcode: "market",
       createdAt: "2025-04-08T13:15:59.825+00:00",
       __v: 0,
+      daysAndSubjects: {
+        Tuesday:"Math",
+        Thursday: "Math",
+        Friday: "Math"
+      },
+      daysAndBackgroungImg:{
+        Tuesday:"https://marketplace.canva.com/EAFUOXXTZtU/1/0/1600w/canva-cute-white-welcome-to-math-class-youtube-intro-video-q2opAt8zpiM.jpg",
+        Thursday: "https://marketplace.canva.com/EAFUOXXTZtU/1/0/1600w/canva-cute-white-welcome-to-math-class-youtube-intro-video-q2opAt8zpiM.jpg",
+        Friday: "https://marketplace.canva.com/EAFUOXXTZtU/1/0/1600w/canva-cute-white-welcome-to-math-class-youtube-intro-video-q2opAt8zpiM.jpg"
+      },
       studentName:"ELINA",
-      backgroundImg:"/math.jpg"
+     
     },
     {
       _id: "67f5219257bbba5806a41e81",
@@ -389,6 +486,18 @@ const users = [
       passcode: "market",
       createdAt: "2025-04-08T13:16:02.459+00:00",
       __v: 0,
+      daysAndSubjects: {
+        Monday:"Math",
+        Tuesday: "English",
+        Wednesday: "Math",
+        Thursday: "English"
+      },
+      daysAndBackgroungImg:{
+        Monday:"https://marketplace.canva.com/EAFUOXXTZtU/1/0/1600w/canva-cute-white-welcome-to-math-class-youtube-intro-video-q2opAt8zpiM.jpg",
+        Tuesday: "https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/main/Yellow%20and%20Red%20Illustrative%20Welcome%20to%20English%20Class%20Intro%20Video.jpg?raw=true",
+        Wednesday: "https://marketplace.canva.com/EAFUOXXTZtU/1/0/1600w/canva-cute-white-welcome-to-math-class-youtube-intro-video-q2opAt8zpiM.jpg",
+        Thursday: "https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/main/Yellow%20and%20Red%20Illustrative%20Welcome%20to%20English%20Class%20Intro%20Video.jpg?raw=true"
+      },
       studentName:"DAKSHIT",
       backgroundImg:"/math.jpg"
     },
@@ -406,8 +515,16 @@ const users = [
       passcode: "market",
       createdAt: "2025-04-08T13:16:04.102+00:00",
       __v: 0,
+      daysAndSubjects: {
+        Monday:"Math",
+        Friday: "Math"
+      },
+      daysAndBackgroungImg:{
+        Monday:"https://marketplace.canva.com/EAFUOXXTZtU/1/0/1600w/canva-cute-white-welcome-to-math-class-youtube-intro-video-q2opAt8zpiM.jpg",
+        Friday: "https://marketplace.canva.com/EAFUOXXTZtU/1/0/1600w/canva-cute-white-welcome-to-math-class-youtube-intro-video-q2opAt8zpiM.jpg"
+      },
       studentName:"ARJUN",
-      backgroundImg:"/math.jpg"
+      
     },
     {
       _id: "67f5219557bbba5806a41e85",
@@ -423,6 +540,16 @@ const users = [
       passcode: "market",
       createdAt: "2025-04-08T13:16:05.763+00:00",
       __v: 0,
+      daysAndSubjects: {
+        Monday:"Math",
+        Thursday: "Math",
+        Friday: "English"
+      },
+      daysAndBackgroungImg:{
+        Monday:"https://marketplace.canva.com/EAFUOXXTZtU/1/0/1600w/canva-cute-white-welcome-to-math-class-youtube-intro-video-q2opAt8zpiM.jpg",
+        Thursday: "https://marketplace.canva.com/EAFUOXXTZtU/1/0/1600w/canva-cute-white-welcome-to-math-class-youtube-intro-video-q2opAt8zpiM.jpg",
+        Friday: "https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/main/Yellow%20and%20Red%20Illustrative%20Welcome%20to%20English%20Class%20Intro%20Video.jpg?raw=true"
+      },
       studentName:"AMMAR",
       backgroundImg:"/math.jpg"
     },
@@ -440,8 +567,17 @@ const users = [
       passcode: "market",
       createdAt: "2025-04-08T13:23:30.542+00:00",
       __v: 0,
+      daysAndSubjects: {
+       Monday:"Math",
+        Wednesday: "Math",
+      },
+      daysAndBackgroungImg:{
+       Monday:"https://marketplace.canva.com/EAFUOXXTZtU/1/0/1600w/canva-cute-white-welcome-to-math-class-youtube-intro-video-q2opAt8zpiM.jpg",
+        Wednesday: "https://marketplace.canva.com/EAFUOXXTZtU/1/0/1600w/canva-cute-white-welcome-to-math-class-youtube-intro-video-q2opAt8zpiM.jpg",
+        
+      },
       studentName:"ANSH",
-      backgroundImg:"/math.jpg"
+    
     },
   ];
 

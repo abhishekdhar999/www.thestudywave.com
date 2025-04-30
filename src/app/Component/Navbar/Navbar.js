@@ -45,7 +45,7 @@ export default function Navbar({ onAboutClick }) {
         <>
           <div onClick={onAboutClick} className="link  font-semibold cursor-pointer">About</div>
           <Link href="/TodayClasses" className=" link hover:text-gray-500 font-semibold">Classes</Link>
-          {/* <Link href="/Contact" className="link hover:text-gray-500 font-semibold">Contact</Link> */}
+          <Link href="/ContactPage" className="link hover:text-gray-500 font-semibold">Contact</Link>
           <div onClick={handleLogout} className="link text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg text-sm px-4 py-2 text-center me-2 mb-1">Logout</div>
         </>
       ) : (
