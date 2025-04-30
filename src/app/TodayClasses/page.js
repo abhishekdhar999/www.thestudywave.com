@@ -48,6 +48,7 @@ export default function TodayClasses() {
             <p className={`text-6xl md:text-7xl mt-18 lg:text-7xl font-bold text-black ${DynaPuffs.className}`}>
               Bringing classroom concepts to life through interactive learning
             </p>
+          </div>
 
           <div className="max-w-[600px] mt-6 text-center">
             <p className="text-lg font-bold md:text-xl text-black">
