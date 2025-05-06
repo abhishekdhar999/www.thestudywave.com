@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import ClassCard from "../Component/ClassCard/ClassCard.js"
 import { classes, users } from "../Database/db.js";
 import Navbar from "../Component/Navbar/Navbar.js";
+import Link from "next/link.js";
 const DynaPuffs = DynaPuff({
   weight: '400',
   subsets: ['latin'],
@@ -58,11 +59,13 @@ export default function TodayClasses() {
           </div>
 
 <div className="flex justify-center md:gap-24 gap-6 m-12 md:flex-row flex-col">
-          <div className="w-46 h-16 bg-green-300 border-2 border-black  text-black rounded-full text-center flex justify-center items-center text-xl">
-  About us
+<Link href="/RescheduledClasses">
+          <div className="w-46 h-16 bg-green-300 border-2 border-black   text-gray-600 rounded-full text-center flex justify-center items-center text-l font-bold">
+  Rescheduled classes
 </div>
+</Link>
 
-<div className="w-46 h-16 bg-purple-300 border-2 border-black  text-black rounded-full text-center flex justify-center items-center text-xl">
+<div className="w-46 h-16 bg-purple-300 border-2 border-black  text-black rounded-full text-center flex justify-center items-center text-l font-bold">
 +91 7740064839
 </div>
 </div>
@@ -191,6 +194,10 @@ export default function TodayClasses() {
         <div className="m-12 md:m-18 flex justify-center">
           <img className="rounded-3xl w-full max-w-5xl" src="https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/main/todayclaseesbanner.png?raw=true" alt="Today's Classes Banner" />
         </div>
+
+
+       
+
         {/* Today's Classes Cards */}
         <div className="">
           {todayClasses.length > 0 ? (
@@ -200,7 +207,7 @@ export default function TodayClasses() {
               ))}
             </div>
           ) : (
-            <div className="text-center text-xl text-gray-500">No classes today!</div>
+            <div className="text-center text-xl text-gray-500"></div>
           )}
         </div>
       </div>
