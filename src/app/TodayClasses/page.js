@@ -30,7 +30,7 @@ export default function TodayClasses() {
     const userId = user._id;
     const isTeacher = user.role === "Teacher";
     const today = new Date().toLocaleDateString('en-US', { weekday: 'long' });
-
+console.log(today)
     const filtered = classes.filter(cls =>
       cls.days.includes(today) &&
       (isTeacher ? cls.teacher === userId : cls.students.includes(userId))
