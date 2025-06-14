@@ -92,7 +92,7 @@ console.log(today)
   {/* First image */}
   <div className="relative min-w-[200px] max-w-[20vw]  h-80 bg-rose-300 rounded-t-full overflow-hidden">
     <img
-      src="https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/main/one.png?raw=true"
+      src="https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/b11b7b30d5746d8f2bbb3e1ed68d4622eb6afdbe/WhatsApp%20Image%202025-06-13%20at%2019.04.53.jpeg?raw=true"
       alt="Student 1"
       className="absolute top-12 bottom-0 w-full object-cover h-72"
     />
@@ -101,7 +101,7 @@ console.log(today)
   {/* Second image */}
   <div className="relative  min-w-[200px] w-[140vw] h-80 bg-amber-300 rounded-full overflow-hidden">
     <img
-      src="https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/main/two.png?raw=true"
+      src="https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/b11b7b30d5746d8f2bbb3e1ed68d4622eb6afdbe/WhatsApp%20Image%202025-06-13%20at%2019.05.18.jpeg?raw=true"
       alt="Student 2"
       className="absolute bottom-0 w-full object-cover h-72"
     />
@@ -109,32 +109,32 @@ console.log(today)
 
   <div className="relative min-w-[200px] w-[140vw] h-80 bg-blue-400 rounded-4xl overflow-hidden">
     <img
-      src="https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/main/three.png?raw=true"
-      alt="Student 2"
+      src="https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/b11b7b30d5746d8f2bbb3e1ed68d4622eb6afdbe/WhatsApp%20Image%202025-06-13%20at%2019.05.22.jpeg?raw=true"
+      alt="Student 3"
       className="absolute bottom-0 w-full object-cover h-72"
     />
   </div>
 
   <div className="relative min-w-[200px] w-[140vw] h-80 bg-orange-300 rounded-tl-full overflow-hidden">
     <img
-      src="https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/main/four.png?raw=true"
-      alt="Student 2"
+      src="https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/b11b7b30d5746d8f2bbb3e1ed68d4622eb6afdbe/WhatsApp%20Image%202025-06-13%20at%2019.06.27%20(1).jpeg?raw=true"
+      alt="Student 4"
       className="absolute left-9 bottom-0 w-full object-cover h-72"
     />
   </div>
 
   <div className="relative min-w-[200px] w-[140vw] h-80 bg-purple-400 rounded-b-full overflow-hidden">
     <img
-      src="https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/main/five.png?raw=true"
-      alt="Student 2"
+      src="https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/b11b7b30d5746d8f2bbb3e1ed68d4622eb6afdbe/WhatsApp%20Image%202025-06-13%20at%2019.06.50.jpeg?raw=true"
+      alt="Student 5"
       className="absolute  bottom-0 w-full object-cover h-72"
     />
   </div>
   
   <div className="relative min-w-[200px] w-[140vw] h-80 bg-green-300 rounded-full overflow-hidden">
     <img
-      src="https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/main/gg6.jpg?raw=true"
-      alt="Student 2"
+      src="https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/b11b7b30d5746d8f2bbb3e1ed68d4622eb6afdbe/WhatsApp%20Image%202025-06-13%20at%2019.07.10.jpeg?raw=true"
+      alt="Student 6"
       className="absolute bottom-0 w-full object-fit h-80"
     />
   </div>
@@ -142,7 +142,7 @@ console.log(today)
   {/* First image duplicate */}
   <div className="relative min-w-[200px] w-[140vw] h-80 bg-rose-300 rounded-t-full overflow-hidden">
     <img
-      src="https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/main/one.png?raw=true"
+      src="https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/b11b7b30d5746d8f2bbb3e1ed68d4622eb6afdbe/WhatsApp%20Image%202025-06-13%20at%2019.04.53.jpeg?raw=true"
       alt="Student 1"
       className="absolute top-12 bottom-0 w-full object-cover"
     />
@@ -151,7 +151,7 @@ console.log(today)
   {/* Second image */}
   <div className="relative min-w-[200px]] w-[140vw] h-80 bg-amber-300 rounded-full overflow-hidden">
     <img
-      src="https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/main/gg1.jpg?raw=true"
+      src="https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/b11b7b30d5746d8f2bbb3e1ed68d4622eb6afdbe/WhatsApp%20Image%202025-06-13%20at%2019.05.18.jpeg?raw=true"
       alt="Student 2"
       className="absolute bottom-0 w-full object-cover h-72"
     />
@@ -159,32 +159,32 @@ console.log(today)
 
   <div className="relative min-w-[200px] w-[140vw] h-80 bg-blue-400 rounded-4xl overflow-hidden">
     <img
-      src="https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/main/three.png?raw=true"
-      alt="Student 2"
+      src="https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/b11b7b30d5746d8f2bbb3e1ed68d4622eb6afdbe/WhatsApp%20Image%202025-06-13%20at%2019.05.22.jpeg?raw=true"
+      alt="Student 3"
       className="absolute bottom-0 w-full object-cover h-72"
     />
   </div>
 
   <div className="relative min-w-[200px] w-[140vw] h-80 bg-orange-200 rounded-tl-full overflow-hidden">
     <img
-      src="https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/main/four.png?raw=true"
-      alt="Student 2"
+      src="https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/b11b7b30d5746d8f2bbb3e1ed68d4622eb6afdbe/WhatsApp%20Image%202025-06-13%20at%2019.06.27%20(1).jpeg?raw=true"
+      alt="Student 4"
       className="absolute left-9 bottom-0 w-full object-cover h-72"
     />
   </div>
 
   <div className="relative min-w-[200px] w-[140vw] h-80 bg-purple-400 rounded-b-full overflow-hidden">
     <img
-      src="https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/main/five.png?raw=true"
-      alt="Student 2"
+      src="https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/b11b7b30d5746d8f2bbb3e1ed68d4622eb6afdbe/WhatsApp%20Image%202025-06-13%20at%2019.06.50.jpeg?raw=true"
+      alt="Student 5"
       className="absolute  bottom-0 w-full object-cover h-72"
     />
   </div>
   
   <div className="relative min-w-[200px] w-[140vw] h-80 bg-green-300 rounded-full overflow-hidden">
     <img
-      src="https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/main/gg6.jpg?raw=true"
-      alt="Student 2"
+      src="https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/b11b7b30d5746d8f2bbb3e1ed68d4622eb6afdbe/WhatsApp%20Image%202025-06-13%20at%2019.07.10.jpeg?raw=true"
+      alt="Student 6"
       className="absolute bottom-0 w-full object-cover h-72"
     />
   </div>

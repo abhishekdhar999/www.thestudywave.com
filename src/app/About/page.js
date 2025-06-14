@@ -143,22 +143,22 @@ const AboutSection = forwardRef(function AboutSection(props, ref) {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {[
               // 1
-              "https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/main/gg1.jpg?raw=true",
+              "https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/b11b7b30d5746d8f2bbb3e1ed68d4622eb6afdbe/WhatsApp%20Image%202025-06-13%20at%2019.07.10.jpeg?raw=true",
 
 // 2
-               "https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/main/gg2.jpg?raw=true",
+               "https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/b11b7b30d5746d8f2bbb3e1ed68d4622eb6afdbe/WhatsApp%20Image%202025-06-13%20at%2019.06.36%20(1).jpeg?raw=true",
 
 // 3
-                "https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/main/gg3.jpg?raw=true",
+                "https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/b11b7b30d5746d8f2bbb3e1ed68d4622eb6afdbe/WhatsApp%20Image%202025-06-13%20at%2019.06.37%20(1).jpeg?raw=true",
                 
                 // 4
-                "https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/main/gg13.jpg?raw=true"
+                "https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/b11b7b30d5746d8f2bbb3e1ed68d4622eb6afdbe/WhatsApp%20Image%202025-06-13%20at%2019.06.46%20(1).jpeg?raw=true"
                 ,
                 // 5
-                "https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/main/gg6.jpg?raw=true"
+                "https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/b11b7b30d5746d8f2bbb3e1ed68d4622eb6afdbe/WhatsApp%20Image%202025-06-13%20at%2019.07.34.jpeg?raw=true"
                 ,
                 // 6
-                "https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/main/gg7.jpg?raw=true",
+                "https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/b11b7b30d5746d8f2bbb3e1ed68d4622eb6afdbe/WhatsApp%20Image%202025-06-13%20at%2019.07.48.jpeg?raw=true",
 
 // 7
 
