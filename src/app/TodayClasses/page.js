@@ -144,7 +144,7 @@ console.log(today)
     <img
       src="https://raw.githubusercontent.com/imAbhishekRao/Photos_storage_for_clients/209592b793ca7ee9a677a9a3caa345591543ba57/three.webp"
       alt="Student 1"
-      className="absolute top-12 bottom-0 w-full object-cover bg-transparent"
+      className="absolute top-12 bottom-0 w-72 object-cover bg-transparent"
     />
   </div>
 
