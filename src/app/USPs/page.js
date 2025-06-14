@@ -14,7 +14,7 @@ const programs = [
       "Explore Science through experiments",
     ],
     image:
-      "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.pngmart.com%2Ffiles%2F4%2FChild-PNG-Image.png&f=1&nofb=1",
+      "https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/fc89ec4d20493fcf4d52b5aa09d0304733c63c50/Child-PNG-Image-1946477957%20(1).png?raw=true",
   },
   {
     title: "Foundation",
@@ -26,7 +26,7 @@ const programs = [
       "Program interactive games",
       "Create an AI project",
     ],
-    image: "https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/main/file_000000003160623086e395440abeeead.png?raw=true",
+    image: "https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/fc89ec4d20493fcf4d52b5aa09d0304733c63c50/file_000000003160623086e395440abeeead%20(1)%20(1).png?raw=true",
   },
   {
     title: "Competitive Exams",
@@ -38,7 +38,7 @@ const programs = [
       "Boost NAPLAN performance",
       "Crack SAT & other standardized tests",
     ],
-    image: "https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/main/file_00000000e6e86230936a7869575a6027.png?raw=true",
+    image: "https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/fc89ec4d20493fcf4d52b5aa09d0304733c63c50/file_00000000e6e86230936a7869575a6027%20(1)%20(1).png?raw=true",
   },
 ];
 

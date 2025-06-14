@@ -29,7 +29,7 @@ const users = [
     },
     {
       "_id": "67f0c2cd9e13ecgj23089d600a72",
-      "name": "Sahan",
+      "name": "Sahana",
       "email": "sahan@studywave.com",
       "password": "sahan35#rX",
       "phoneNumber": 9876543210,
@@ -45,7 +45,7 @@ const users = [
       "_id": "67f4e8f092e54d81ddd7bbe5",
       "name": "Mohit Tariyal",
       "email": "mohit@studywave.com",
-      "password": "1234",
+      "password": "6gvc782",
       "phoneNumber": 9876543210,
       "isVerifiedUser": true,
       "role": "Teacher",
@@ -244,7 +244,7 @@ const users = [
   const classes = [
     {
       _id: "67f0f55a65ggw443faee7cea3ec3f",
-      title: "Sahej & Sahan English classes",
+      title: "Sahej & Sahana English classes",
       teacher: "67f4e8f092e54d81ddd7bbe5",
       students: ["67f0c2cd9e13b32fc089d600a72","67f0c2cd9e13ecgj23089d600a72"],
       days: ["Thursday", "Wednesday", "Tuesday"],
@@ -255,14 +255,14 @@ const users = [
       createdAt: "2025-04-05T09:18:18.073+00:00",
       __v: 0,
       daysAndSubjects: {
-        Tuesday: "Math",
-        Wednesday: "Math",
-        Thursday: "Math"
+       
+        Wednesday: "English",
+       
       },
       daysAndBackgroungImg:{
-        Tuesday: "https://marketplace.canva.com/EAFUOXXTZtU/1/0/1600w/canva-cute-white-welcome-to-math-class-youtube-intro-video-q2opAt8zpiM.jpg",
-        Wednesday: "https://marketplace.canva.com/EAFUOXXTZtU/1/0/1600w/canva-cute-white-welcome-to-math-class-youtube-intro-video-q2opAt8zpiM.jpg",
-        Thursday: "https://marketplace.canva.com/EAFUOXXTZtU/1/0/1600w/canva-cute-white-welcome-to-math-class-youtube-intro-video-q2opAt8zpiM.jpg"
+       
+        Wednesday:"https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/main/Yellow%20and%20Red%20Illustrative%20Welcome%20to%20English%20Class%20Intro%20Video.jpg?raw=true",
+        
 
 
       },
@@ -272,7 +272,7 @@ const users = [
 
     {
       _id: "67f0f55a65gnn2363faee7cea3ec3f",
-      title: "Sahej & Sahan Math Classes classes",
+      title: "Sahej & Sahana Math Classes classes",
       teacher: "67f4e8f092e54d81ddd7bbe5",
       students: ["67f0c2cd9e13b32fc089d600a72","67f0c2cd9e13ecgj23089d600a72"],
       days: ["Thursday", "Wednesday", "Tuesday"],
@@ -289,8 +289,7 @@ const users = [
       },
       daysAndBackgroungImg:{
         Tuesday: "https://marketplace.canva.com/EAFUOXXTZtU/1/0/1600w/canva-cute-white-welcome-to-math-class-youtube-intro-video-q2opAt8zpiM.jpg",
-        Wednesday: "https://marketplace.canva.com/EAFUOXXTZtU/1/0/1600w/canva-cute-white-welcome-to-math-class-youtube-intro-video-q2opAt8zpiM.jpg",
-        Thursday: "https://marketplace.canva.com/EAFUOXXTZtU/1/0/1600w/canva-cute-white-welcome-to-math-class-youtube-intro-video-q2opAt8zpiM.jpg"
+       
 
 
       },
