@@ -92,7 +92,7 @@ console.log(today)
   {/* First image */}
   <div className="relative min-w-[200px] max-w-[20vw]  h-80 bg-rose-300 rounded-t-full overflow-hidden">
     <img
-      src="https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/b11b7b30d5746d8f2bbb3e1ed68d4622eb6afdbe/WhatsApp%20Image%202025-06-13%20at%2019.04.53.jpeg?raw=true"
+      src="https://raw.githubusercontent.com/imAbhishekRao/Photos_storage_for_clients/209592b793ca7ee9a677a9a3caa345591543ba57/two.webp"
       alt="Student 1"
       className="absolute top-12 bottom-0 w-full object-cover h-72 bg-transparent"
     />
@@ -101,7 +101,7 @@ console.log(today)
   {/* Second image */}
   <div className="relative  min-w-[200px] w-[140vw] h-80 bg-amber-300 rounded-full overflow-hidden">
     <img
-      src="https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/b11b7b30d5746d8f2bbb3e1ed68d4622eb6afdbe/WhatsApp%20Image%202025-06-13%20at%2019.05.18.jpeg?raw=true"
+      src="https://raw.githubusercontent.com/imAbhishekRao/Photos_storage_for_clients/209592b793ca7ee9a677a9a3caa345591543ba57/three.webp"
       alt="Student 2"
       className="absolute bottom-0 w-full object-cover h-72 bg-transparent"
     />
@@ -142,7 +142,7 @@ console.log(today)
   {/* First image duplicate */}
   <div className="relative min-w-[200px] w-[140vw] h-80 bg-rose-300 rounded-t-full overflow-hidden">
     <img
-      src="https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/b11b7b30d5746d8f2bbb3e1ed68d4622eb6afdbe/WhatsApp%20Image%202025-06-13%20at%2019.04.53.jpeg?raw=true"
+      src="https://raw.githubusercontent.com/imAbhishekRao/Photos_storage_for_clients/209592b793ca7ee9a677a9a3caa345591543ba57/three.webp"
       alt="Student 1"
       className="absolute top-12 bottom-0 w-full object-cover bg-transparent"
     />
@@ -151,7 +151,7 @@ console.log(today)
   {/* Second image */}
   <div className="relative min-w-[200px]] w-[140vw] h-80 bg-amber-300 rounded-full overflow-hidden">
     <img
-      src="https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/b11b7b30d5746d8f2bbb3e1ed68d4622eb6afdbe/WhatsApp%20Image%202025-06-13%20at%2019.05.18.jpeg?raw=true"
+      src="https://raw.githubusercontent.com/imAbhishekRao/Photos_storage_for_clients/209592b793ca7ee9a677a9a3caa345591543ba57/three.webp"
       alt="Student 2"
       className="absolute bottom-0 w-full object-cover h-72 bg-transparent"
     />
