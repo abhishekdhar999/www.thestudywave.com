@@ -8,8 +8,7 @@ const DynaPuffs = DynaPuff({
   display: 'swap',
 });
 export default function RescheduleClassCard({today,classData}) {
-//   const [joinUrl, setJoinUrl] = useState("");
-//   const [startUrl, setStartUrl] = useState("");
+
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
@@ -17,22 +16,7 @@ export default function RescheduleClassCard({today,classData}) {
   const subjectForToday = classData?.daysAndSubjects[todays];
   const backgroundImgForToday = classData.daysAndBackgroungImg[todays];
 
-//   const handleCreateMeeting = async () => {
-//     setLoading(true);
-//     setError("");
-//     console.log("in");
-//     try {
-//       const res = await axios.post("http://localhost:3001/meeting/createmeeting");
 
-//       console.log("res",res)
-//     //   setJoinUrl(res.data.join_url);
-//     //   setStartUrl(res.data.start_url);
-//     } catch (err) {
-//       setError(err.response?.data?.message || "Failed to create meeting");
-//     } finally {
-//       setLoading(false);
-//     }
-//   };
 
   return (
     <>
