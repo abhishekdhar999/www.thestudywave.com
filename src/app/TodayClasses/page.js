@@ -94,7 +94,7 @@ console.log(today)
     <img
       src="https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/b11b7b30d5746d8f2bbb3e1ed68d4622eb6afdbe/WhatsApp%20Image%202025-06-13%20at%2019.04.53.jpeg?raw=true"
       alt="Student 1"
-      className="absolute top-12 bottom-0 w-full object-cover h-72"
+      className="absolute top-12 bottom-0 w-full object-cover h-72 bg-transparent"
     />
   </div>
 
@@ -103,7 +103,7 @@ console.log(today)
     <img
       src="https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/b11b7b30d5746d8f2bbb3e1ed68d4622eb6afdbe/WhatsApp%20Image%202025-06-13%20at%2019.05.18.jpeg?raw=true"
       alt="Student 2"
-      className="absolute bottom-0 w-full object-cover h-72"
+      className="absolute bottom-0 w-full object-cover h-72 bg-transparent"
     />
   </div>
 
@@ -111,7 +111,7 @@ console.log(today)
     <img
       src="https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/b11b7b30d5746d8f2bbb3e1ed68d4622eb6afdbe/WhatsApp%20Image%202025-06-13%20at%2019.05.22.jpeg?raw=true"
       alt="Student 3"
-      className="absolute bottom-0 w-full object-cover h-72"
+      className="absolute bottom-0 w-full object-cover h-72 bg-transparent"
     />
   </div>
 
@@ -119,7 +119,7 @@ console.log(today)
     <img
       src="https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/b11b7b30d5746d8f2bbb3e1ed68d4622eb6afdbe/WhatsApp%20Image%202025-06-13%20at%2019.06.27%20(1).jpeg?raw=true"
       alt="Student 4"
-      className="absolute left-9 bottom-0 w-full object-cover h-72"
+      className="absolute left-9 bottom-0 w-full object-cover h-72 bg-transparent"
     />
   </div>
 
@@ -127,7 +127,7 @@ console.log(today)
     <img
       src="https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/b11b7b30d5746d8f2bbb3e1ed68d4622eb6afdbe/WhatsApp%20Image%202025-06-13%20at%2019.06.50.jpeg?raw=true"
       alt="Student 5"
-      className="absolute  bottom-0 w-full object-cover h-72"
+      className="absolute  bottom-0 w-full object-cover h-72 bg-transparent"
     />
   </div>
   
@@ -135,7 +135,7 @@ console.log(today)
     <img
       src="https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/b11b7b30d5746d8f2bbb3e1ed68d4622eb6afdbe/WhatsApp%20Image%202025-06-13%20at%2019.07.10.jpeg?raw=true"
       alt="Student 6"
-      className="absolute bottom-0 w-full object-fit h-80"
+      className="absolute bottom-0 w-full object-fit h-80 bg-transparent"
     />
   </div>
 
@@ -144,7 +144,7 @@ console.log(today)
     <img
       src="https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/b11b7b30d5746d8f2bbb3e1ed68d4622eb6afdbe/WhatsApp%20Image%202025-06-13%20at%2019.04.53.jpeg?raw=true"
       alt="Student 1"
-      className="absolute top-12 bottom-0 w-full object-cover"
+      className="absolute top-12 bottom-0 w-full object-cover bg-transparent"
     />
   </div>
 
@@ -153,7 +153,7 @@ console.log(today)
     <img
       src="https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/b11b7b30d5746d8f2bbb3e1ed68d4622eb6afdbe/WhatsApp%20Image%202025-06-13%20at%2019.05.18.jpeg?raw=true"
       alt="Student 2"
-      className="absolute bottom-0 w-full object-cover h-72"
+      className="absolute bottom-0 w-full object-cover h-72 bg-transparent"
     />
   </div>
 
@@ -161,7 +161,7 @@ console.log(today)
     <img
       src="https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/b11b7b30d5746d8f2bbb3e1ed68d4622eb6afdbe/WhatsApp%20Image%202025-06-13%20at%2019.05.22.jpeg?raw=true"
       alt="Student 3"
-      className="absolute bottom-0 w-full object-cover h-72"
+      className="absolute bottom-0 w-full object-cover h-72 bg-transparent"
     />
   </div>
 
@@ -169,7 +169,7 @@ console.log(today)
     <img
       src="https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/b11b7b30d5746d8f2bbb3e1ed68d4622eb6afdbe/WhatsApp%20Image%202025-06-13%20at%2019.06.27%20(1).jpeg?raw=true"
       alt="Student 4"
-      className="absolute left-9 bottom-0 w-full object-cover h-72"
+      className="absolute left-9 bottom-0 w-full object-cover h-72 bg-transparent"
     />
   </div>
 
@@ -177,7 +177,7 @@ console.log(today)
     <img
       src="https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/b11b7b30d5746d8f2bbb3e1ed68d4622eb6afdbe/WhatsApp%20Image%202025-06-13%20at%2019.06.50.jpeg?raw=true"
       alt="Student 5"
-      className="absolute  bottom-0 w-full object-cover h-72"
+      className="absolute  bottom-0 w-full object-cover h-72 bg-transparent"
     />
   </div>
   
@@ -185,7 +185,7 @@ console.log(today)
     <img
       src="https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/b11b7b30d5746d8f2bbb3e1ed68d4622eb6afdbe/WhatsApp%20Image%202025-06-13%20at%2019.07.10.jpeg?raw=true"
       alt="Student 6"
-      className="absolute bottom-0 w-full object-cover h-72"
+      className="absolute bottom-0 w-full object-cover h-72 bg-transparent"
     />
   </div>
 </div>
