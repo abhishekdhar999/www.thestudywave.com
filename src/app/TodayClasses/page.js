@@ -133,9 +133,9 @@ console.log(today)
   
   <div className="relative min-w-[200px] w-[140vw] h-80 bg-green-300 rounded-full overflow-hidden">
     <img
-      src="https://cdn.prod.website-files.com/61f64598c68d4ab53ecff616/66cc46659baf5f27f4c63291_H_12%2B.avif"
+      src="https://cdn.prod.website-files.com/61f64598c68d4ab53ecff616/66cc466567f8ec95b55a6810_H_9-12.avif"
       alt="Student 6"
-      className="absolute bottom-0 w-full object-fit h-80 bg-transparent"
+      className="absolute bottom-0 w-full object-cover h-72 bg-transparent"
     />
   </div>
 
@@ -181,13 +181,13 @@ console.log(today)
     />
   </div>
   
-  <div className="relative min-w-[200px] w-[140vw] h-80 bg-green-300 rounded-full overflow-hidden">
+  {/* <div className="relative min-w-[200px] w-[140vw] h-80 bg-green-300 rounded-full overflow-hidden">
     <img
       src="https://cdn.prod.website-files.com/61f64598c68d4ab53ecff616/66cc466567f8ec95b55a6810_H_9-12.avif"
       alt="Student 6"
       className="absolute bottom-0 w-full object-cover h-72 bg-transparent"
     />
-  </div>
+  </div> */}
 </div>
 </div>
         {/* Today's Classes Banner */}
