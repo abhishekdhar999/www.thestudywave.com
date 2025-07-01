@@ -14,7 +14,7 @@ const users = [
       "isVerifiedUser": false
     },
     {
-      "_id": "67f0c2cd9e1373rg89d600a79",
+      "_id": "67f0c2cd9e13ec089vewd600a79",
       "name": "Ryan",
       "email": "ryan@studywave.com",
       "password": "ryanA2#cZ",
@@ -24,7 +24,7 @@ const users = [
       "createdAt": "2025-04-05T05:42:37.146+00:00",
       "updatedAt": "2025-04-11T10:06:13.217+00:00",
       "__v": 0,
-      "refreshTokken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiIxIiwiZW1haWdsvwiOiIxQvhvGV4YW1wbGUuY29tIn0.a1",
+      "refreshTokken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiIxIiwiZW1haWwiOiIxfvrvQvhvGV4YW1wbGUuY29tIn0.a1",
       "isVerifiedUser": false
     },
     {
@@ -257,36 +257,37 @@ const users = [
   
   const classes = [
     {
-      _id: "67f0f55a65ggw443faee7cea3ec3f",
-      title: "Sahej & Sahana English classes",
+      _id: "67f4eef492e54dgerg81ddd7bc03",
+      title: "Ryan Classes",
       teacher: "67f4e8f092e54d81ddd7bbe5",
-      students: ["67f0c2cd9e1373rg89d600a79"],
-      days: ["Friday", "Tuesday"],
+      students: ["67f0c2cd9e13ec089vewd600a79"],
+      days: ["Tuesday", "Friday"],
       time: "01:30 PM - 2:30 PM",
+      recurring: true,
       boardLink:"https://app.idroo.com/boards/yRrydY1EWP",
       meetingLink: "https://us06web.zoom.us/j/89434444501?pwd=x1panzZa3hU5t1m6xZvf8nGAcKIukN.1",
-      recurring: true,
-      createdAt: "2025-04-05T09:18:18.073+00:00",
+      meetingId: "894 3444 4501",
+      passcode: "516179",
+      createdAt: "2025-04-08T09:40:04.054+00:00",
       __v: 0,
       daysAndSubjects: {
-       
-        Wednesday: "English",
-       
+        Tuesday: "Math",
+        Friday: "Math"
       },
       daysAndBackgroungImg:{
+        Tuesday: "https://marketplace.canva.com/EAFUOXXTZtU/1/0/1600w/canva-cute-white-welcome-to-math-class-youtube-intro-video-q2opAt8zpiM.jpg",
        
-        Wednesday:"https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/main/Yellow%20and%20Red%20Illustrative%20Welcome%20to%20English%20Class%20Intro%20Video.jpg?raw=true",
-        
+        Friday: "https://marketplace.canva.com/EAFUOXXTZtU/1/0/1600w/canva-cute-white-welcome-to-math-class-youtube-intro-video-q2opAt8zpiM.jpg"
 
 
       },
-      studentName:"SAHAJ & SAHAN",
+      studentName:"RYAN",
       
     },
-
+    
     {
-      _id: "67f0f55a67gcw443faee7cea3ec3f",
-      title: "Ryan classes",
+      _id: "67f0f55a65ggw443faee7cea3ec3f",
+      title: "Sahej & Sahana English classes",
       teacher: "67f4e8f092e54d81ddd7bbe5",
       students: ["67f0c2cd9e13b32fc089d600a72","67f0c2cd9e13ecgj23089d600a72"],
       days: ["Thursday", "Wednesday", "Tuesday"],
@@ -326,8 +327,6 @@ const users = [
       __v: 0,
       daysAndSubjects: {
         Tuesday: "Math",
-        Wednesday: "Math",
-        Thursday: "Math"
       },
       daysAndBackgroungImg:{
         Tuesday: "https://marketplace.canva.com/EAFUOXXTZtU/1/0/1600w/canva-cute-white-welcome-to-math-class-youtube-intro-video-q2opAt8zpiM.jpg",
@@ -335,7 +334,7 @@ const users = [
 
 
       },
-      studentName:"SAHAJ & SAHAN",
+      studentName:"SAHAJ & SAHANA",
       
     },
     {
