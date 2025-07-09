@@ -290,7 +290,7 @@ const users = [
       title: "Sahej & Sahana English classes",
       teacher: "67f4e8f092e54d81ddd7bbe5",
       students: ["67f0c2cd9e13b32fc089d600a72","67f0c2cd9e13ecgj23089d600a72"],
-      days: ["Monday"],
+      days: ["Wednesday"],
       time: "04:30 AM - 5:30 AM",
       boardLink:"https://app.idroo.com/boards/RCEKB0PfhX",
       meetingLink: "https://us06web.zoom.us/j/89817558043?pwd=iWXgKtgxJ92X2Z3hDsslyY4qoR8DiL.1",
@@ -299,12 +299,12 @@ const users = [
       __v: 0,
       daysAndSubjects: {
        
-        Monday: "English",
+       Wednesday: "English",
        
       },
       daysAndBackgroungImg:{
        
-        Monday:"https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/main/Yellow%20and%20Red%20Illustrative%20Welcome%20to%20English%20Class%20Intro%20Video.jpg?raw=true",
+        Wednesday:"https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/main/Yellow%20and%20Red%20Illustrative%20Welcome%20to%20English%20Class%20Intro%20Video.jpg?raw=true",
         
 
 
@@ -529,7 +529,7 @@ const users = [
       title: "Aarit Classes",
       teacher: "67f4e8f092e54d81ddd7bbe5",
       students: ["67f4e9bc92e54d81ddd7bbfd"],
-      days: ["Monday", "Tuesday"],
+      days: ["Monday", "Wednesday"],
       date: "2025-03-24T00:00:00.000+00:00",
       time: "4:00 PM - 5:00 PM",
       recurring: true,
@@ -540,12 +540,12 @@ const users = [
       createdAt: "2025-04-08T09:42:38.174+00:00",
       __v: 0,
       daysAndSubjects: {
-        Monday:"Math",
+        Wednesday:"Math",
         Tuesday:"Math",
       },
       daysAndBackgroungImg:{
         Tuesday:"https://marketplace.canva.com/EAFUOXXTZtU/1/0/1600w/canva-cute-white-welcome-to-math-class-youtube-intro-video-q2opAt8zpiM.jpg",
-        Monday: "https://marketplace.canva.com/EAFUOXXTZtU/1/0/1600w/canva-cute-white-welcome-to-math-class-youtube-intro-video-q2opAt8zpiM.jpg",
+        Wednesday: "https://marketplace.canva.com/EAFUOXXTZtU/1/0/1600w/canva-cute-white-welcome-to-math-class-youtube-intro-video-q2opAt8zpiM.jpg",
       },
       studentName:"AARIT",
      
