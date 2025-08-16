@@ -1,5 +1,33 @@
 const users = [
     {
+"_id": "67f0c2cd9e13ec089d600b00",
+  "name": "Abhishek Gobind Rao",
+  "email": "abhishek@studywave.com",
+  "password": "Abhishek@Math123",
+  "phoneNumber": 9876543299,
+  "role": "Teacher",
+  "subjects": ["Math"],
+  "createdAt": "2025-04-16T08:00:00.000+00:00",
+  "updatedAt": "2025-04-16T08:00:00.000+00:00",
+  "__v": 0,
+  "refreshTokken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiIxNSIsImVtYWlsIjoiYWJoaXNoZWtAc3R1ZHl3YXZlLmNvbSJ9.j15",
+  "isVerifiedUser": true
+},
+    { 
+"_id": "67f0c2cd9e13ec089d600b01",
+  "name": "Tanisha",
+  "email": "tanisha@studywave.com",
+  "password": "Tanisha@Math456",
+  "phoneNumber": 9876543300,
+  "role": "Student",
+  "subjects": ["Math"],
+  "createdAt": "2025-04-16T08:05:00.000+00:00",
+  "updatedAt": "2025-04-16T08:05:00.000+00:00",
+  "__v": 0,
+  "refreshTokken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiIxNiIsImVtYWlsIjoidGFuaXNoYUBzdHVkeXdhdmUuY29tIn0.j16",
+  "isVerifiedUser": true
+    },
+    {
       "_id": "67f0c2cd9e13ec089d600a72",
       "name": "Sameh",
       "email": "sameh@studywave.com",
@@ -688,6 +716,32 @@ const users = [
       studentName:"AMMAR",
       backgroundImg:"/math.jpg"
     },
+      {
+  _id: "67f4eef492e54d81ddd7bc99",
+  title: "Tanisha's Maths Class",
+  teacher: "67f0c2cd9e13ec089d600b00", // Abhishek's ID
+  students: ["67f0c2cd9e13ec089d600b01"], // Tanisha's ID
+  days: ["Monday", "Thursday", "Saturday"],
+  time: "10:00 PM - 11:00 PM",
+  recurring: true,
+  boardLink: "https://miro.com/app/board/uXjVJTMqsF4=/",
+  meetingLink: "https://meet.google.com/nve-vqeq-coy",
+  meetingId: "nve-vqeq-coy",
+  passcode: "",
+  createdAt: "2025-04-16T09:00:00.000+00:00",
+  __v: 0,
+  daysAndSubjects: {
+    Monday: "Math",
+    Thursday: "Math",
+    Saturday: "Math"
+  },
+  daysAndBackgroungImg: {
+    Monday: "https://marketplace.canva.com/EAFUOXXTZtU/1/0/1600w/canva-cute-white-welcome-to-math-class-youtube-intro-video-q2opAt8zpiM.jpg",
+    Thursday: "https://marketplace.canva.com/EAFUOXXTZtU/1/0/1600w/canva-cute-white-welcome-to-math-class-youtube-intro-video-q2opAt8zpiM.jpg",
+    Saturday: "https://marketplace.canva.com/EAFUOXXTZtU/1/0/1600w/canva-cute-white-welcome-to-math-class-youtube-intro-video-q2opAt8zpiM.jpg"
+  },
+  studentName: "TANISHA"
+},
     {
       _id: "67f5235257bbba5806a41e87",
       title: "Ansh's Classes",
