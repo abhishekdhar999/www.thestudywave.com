@@ -30,9 +30,9 @@ export default function RescheduleClassCard({today,classData}) {
 {/* new */}
 
 <div
-    className="max-w-6xl     sm:mx-auto md:mx-18 lg:mx-auto xl:mx-auto mt-16 bg-white shadow-xl rounded-lg text-gray-900">
-    <div className="rounded-t-lg h-[340px] lg:h-[420px] overflow-hidden">
-    <img
+    className="max-w-4xl sm:mx-auto md:mx-18 lg:mx-auto xl:mx-auto mt-6 bg-white shadow-2xl rounded-2xl ring-1 ring-black/5 text-gray-900 overflow-hidden">
+    <div className="rounded-t-2xl h-[220px] md:h-[300px] lg:h-[360px] overflow-hidden">
+      <img
   className="object-cover object-top w-full" 
   src={backgroundImgForToday} 
   alt="Mountain" 
@@ -40,17 +40,17 @@ export default function RescheduleClassCard({today,classData}) {
   height={300} 
 />
     </div>
-    <div className="mx-auto w-32 h-36  relative -mt-16 border-4 border-white rounded-full overflow-hidden">
-        {/* <img className="object-cover object-center h-32" src='https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt='Woman looking front'/> */}
-    </div>
-    <div className="text-center mt-2">
-        <h2 className={` text-2xl font-serif  ${DynaPuffs.className}`}>{classData.title}</h2>
-        <p className="text-gray-500 text-2xl ">Subject : <span className="font-bold text-black">{subjectForToday}</span></p>
+    <div className="text-center mt-3 px-6">
+        <h2 className={`text-2xl md:text-3xl font-bold ${DynaPuffs.className}`}>{classData.title}</h2>
+        <p className="text-gray-600 text-lg md:text-xl mt-1">Subject: <span className="font-semibold text-black">{subjectForToday}</span></p>
     </div>
 
-    <div className="svgs flex justify-center flex-col md:flex-row pt-4"> 
+    {/* Info + Actions row */}
+    <div className="mt-3 px-4 md:px-6 pb-6">
+      <div className="flex flex-col md:flex-row items-stretch md:items-center justify-between gap-4">
+        <div className="svgs flex justify-center flex-col md:flex-row">
 
-<p className=" text-lg font-bold flex items-center justify-center text-blue-950 mx-2">
+<p className="text-lg md:text-xl font-bold flex items-center justify-center text-blue-950 mx-2">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 340" width={36} height={36}>
     <g data-name="Layer 7">
       <path d="M318.586 28.226a6.369 6.369 0 0 0-6.367 6.26l-2.292 135.2h17.319l-2.293-135.2a6.367 6.367 0 0 0-6.367-6.26z" style={{ fill: "#dde5f4" }} />
@@ -78,10 +78,10 @@ export default function RescheduleClassCard({today,classData}) {
     </g>
   </svg>
 
-    <span className="ml-4 font-serif text-blue-950">MOHIT TARIYAL</span> 
+    <span className="ml-4 font-serif text-blue-950">{classData.teacherName}</span> 
 </p>
 
-<p className=" text-blue-950 font-bold text-lg lg:text-lg flex items-center justify-center mx-2 ">
+<p className="text-blue-950 font-bold text-lg md:text-xl flex items-center justify-center mx-2 ">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width={36} height={36}>
 <g data-name="Girl Graduation">
 <path
@@ -123,16 +123,18 @@ style={{ fill: "#231e23" }}
 </g>
 </svg> <span className="ml-4  font-serif ">{classData.studentName}</span>
 </p>
-</div>
+        </div>
 
-    
-    <div className="p-4 border-t mx-8 mt-2 flex justify-center md:gap-24 md:flex-row flex-col">
-      <a href={classData.meetingLink} target="_blank" rel="noopener noreferrer">
-    <div type="button" className="text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 cursor-pointer">Join Class</div>
-    </a>
-    <a href={classData.boardLink} target="_blank" rel="noopener noreferrer">
-    <div type="button" className="text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 cursor-pointer">Open Whiteboard</div>
-    </a>
+        {/* Actions on the right */}
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-3 md:gap-4">
+          <a href={classData.meetingLink} target="_blank" rel="noopener noreferrer">
+            <div type="button" className="inline-flex items-center justify-center text-white bg-orange-500 hover:bg-orange-600 focus:ring-4 focus:outline-none focus:ring-orange-200 font-semibold rounded-xl text-base md:text-lg px-6 md:px-8 py-3 md:py-3.5 text-center shadow-lg hover:shadow-xl transform hover:scale-[1.02] transition-all duration-200 w-full md:w-auto cursor-pointer">Join Class</div>
+          </a>
+          <a href={classData.boardLink} target="_blank" rel="noopener noreferrer">
+            <div type="button" className="inline-flex items-center justify-center text-white bg-orange-500 hover:bg-orange-600 focus:ring-4 focus:outline-none focus:ring-orange-200 font-semibold rounded-xl text-base md:text-lg px-6 md:px-8 py-3 md:py-3.5 text-center shadow-lg hover:shadow-xl transform hover:scale-[1.02] transition-all duration-200 w-full md:w-auto cursor-pointer">Open Whiteboard</div>
+          </a>
+        </div>
+      </div>
     </div>
     </div>
     </>
