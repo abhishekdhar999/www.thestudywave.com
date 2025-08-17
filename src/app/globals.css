@@ -25,7 +25,7 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 #zmmtg-root {
   z-index: 9999 !important;
@@ -35,7 +35,7 @@ body {
 
 .image-textS {
   
-  font-size: 14vw;
+  font-size: 9vw;
   background-image: url('https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/main/back9.jpg?raw=true');
   background-size: cover;
    background-position: right; 
@@ -47,7 +47,7 @@ body {
 }
 .image-textT {
   
-  font-size: 14vw;
+  font-size: 9vw;
   background-image: url('https://raw.githubusercontent.com/imAbhishekRao/Photos_storage_for_clients/refs/heads/main/back4.webp');
   background-size: cover;
   background-position: left;
@@ -59,7 +59,7 @@ body {
 }
 .image-textU {
   
-  font-size: 14vw;
+  font-size: 9vw;
   background-image: url('https://raw.githubusercontent.com/imAbhishekRao/Photos_storage_for_clients/refs/heads/main/back4.webp');
   background-size: cover;
    background-position:right; 
@@ -71,7 +71,7 @@ body {
 }
 .image-textD {
   
-  font-size: 14vw;
+  font-size: 9vw;
   background-image: url('https://raw.githubusercontent.com/imAbhishekRao/Photos_storage_for_clients/refs/heads/main/back8.webp');
   background-size: cover;
   background-position: right;
@@ -83,7 +83,7 @@ body {
 }
 .image-textY {
   
-  font-size: 14vw;
+  font-size: 9vw;
   background-image: url('https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/main/back6.jpeg?raw=true');
   background-size: cover;
   background-position: left;
@@ -95,7 +95,7 @@ body {
 }
 .image-textW {
   
-  font-size: 14vw;
+  font-size: 9vw;
   background-image: url('https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/main/back7.jpeg?raw=true');
   background-size: cover;
   /* background-position: center; */
@@ -107,7 +107,7 @@ body {
 }
 .image-textA {
   
-  font-size: 14vw;
+  font-size: 9vw;
   background-image: url('https://raw.githubusercontent.com/imAbhishekRao/Photos_storage_for_clients/refs/heads/main/back8.webp');
   background-size: cover;
   /* background-position: center; */
@@ -119,7 +119,7 @@ body {
 }
 .image-textV {
   
-  font-size: 14vw;
+  font-size: 9vw;
   background-image: url('https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/main/back9.jpg?raw=true');
   background-size: cover;
   background-position: right;
@@ -131,7 +131,7 @@ body {
 }
 .image-textE {
   
-  font-size: 14vw;
+  font-size: 9vw;
   background-image: url('https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/main/back6.jpeg?raw=true');
   background-size: cover;
   background-position: center;

@@ -1,7 +1,7 @@
 const users = [
     {
 "_id": "67f0c2cd9e13ec089d600b00",
-  "name": "Abhishek Gobind Rao",
+  "name": "Abhishek Rao",
   "email": "abhishek@studywave.com",
   "password": "Abhishek@Math123",
   "phoneNumber": 9876543299,
@@ -770,5 +770,12 @@ const users = [
     
     },
   ];
+
+  // Normalize teacherName on every class from the authoritative users list
+  // Always overwrite to avoid stale or incorrect values in data
+  for (const cls of classes) {
+    const t = users.find(u => u._id === cls.teacher);
+    cls.teacherName = t?.name || "Unknown";
+  }
 
   export{classes,users}

@@ -1,22 +1,31 @@
 "use client";
 import React from "react";
+import { Rubik } from "next/font/google";
+
+const rubik = Rubik({
+  weight: ["400", "500", "700"],
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export const Footer = () => {
   return (
-    <footer className="mt-8  p-12 bg-orange-500 ">
-      <div className="mx-auto w-full max-w-[1166px] px-4 xl:px-0">
-        <div className="flex flex-col justify-between sm:px-[18px] md:flex-row md:px-10">
+    <footer className={`mt-0 bg-neutral-50 border-t border-black/5 ${rubik.className}`}>
+      <div className="mx-auto w-full max-w-[1166px] px-4 xl:px-0 py-12">
+        <div className="flex flex-col items-center justify-between gap-10 sm:px-[18px] md:flex-row md:px-10">
           {/* Logo and description */}
-          <div className="md:w-[316px]">
-            <h1 className="text-[12px] font-extrabold ">
-              <span className="text-rose-600"><span className="text-black">THE</span> STUDY <span className="text-black">WAVE</span></span>
+          <div className="md:w-[420px] text-center">
+            <h1 className="text-2xl font-extrabold tracking-tight text-black text-center">
+              <span className="text-black">The</span>
+              <span className="text-orange-500 mx-2">Study</span>
+              <span className="text-black">Wave</span>
             </h1>
-            <p className="mt-[18px] text-[15px] font-normal text-white/80">
-            We are committed to empowering learners and educators by creating seamless, impactful digital experiences. Whether youre here to teach, learn, or grow—our platform is designed to support you every step of the way.
+            <p className="mt-3 text-[15px] leading-7 text-gray-600">
+              We are committed to empowering learners and educators by creating seamless, impactful digital experiences. Whether you're here to teach, learn, or grow — our platform is designed to support you every step of the way.
             </p>
 
             {/* Social Media Links */}
-            <div className="mt-[18px] flex gap-4">
+            <div className="mt-4 flex gap-3 justify-center">
               {[
                 { href: "#", src: "https://raw.githubusercontent.com/imAbhishekRao/Photos_storage_for_clients/927f44e824399f91b54143eefd52c488c68d6cd7/facebook.svg", alt: "facebook" },
                 { href: "/", src: "https://raw.githubusercontent.com/imAbhishekRao/Photos_storage_for_clients/eaaf3a5d8c6fbfea928537419323a9fd3dc8456b/linkedin.svg", alt: "linkedin" },
@@ -24,41 +33,53 @@ export const Footer = () => {
                 { href: "", src: "https://raw.githubusercontent.com/imAbhishekRao/Photos_storage_for_clients/eaaf3a5d8c6fbfea928537419323a9fd3dc8456b/twitter.svg", alt: "twitter" },
                 { href: "https://www.youtube.com/", src: "https://raw.githubusercontent.com/imAbhishekRao/Photos_storage_for_clients/eaaf3a5d8c6fbfea928537419323a9fd3dc8456b/youtube.svg", alt: "youtube" },
               ].map(({ href, src, alt }) => (
-                <a className="hover:scale-110" target="_blank" key={alt} href={href} rel="noopener noreferrer">
-                  <img alt={`${alt} icon`} width="36" height="36" src={`${src}`} />
+                <a
+                  className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-black/10 bg-black/5 hover:bg-orange-50 hover:border-orange-200 transition"
+                  target="_blank" key={alt} href={href} rel="noopener noreferrer" aria-label={alt}
+                >
+                  <img alt={`${alt} icon`} width="20" height="20" src={`${src}`} />
                 </a>
               ))}
             </div>
           </div>
 
           {/* Contact Info */}
-          <div className="md:w-[316px] mt-[23px] space-y-6">
+          <div className="md:w-[316px] mt-[6px] space-y-6">
             {/* Phone */}
             <div className="flex items-center">
-              <div className="flex h-[38px] w-[38px] items-center justify-center rounded-full bg-white/10">
-                {/* Phone Icon SVG */}
-                <img src="https://raw.githubusercontent.com/imAbhishekRao/Photos_storage_for_clients/eaaf3a5d8c6fbfea928537419323a9fd3dc8456b/phone.svg" alt="" />
+              <div className="flex h-[40px] w-[40px] items-center justify-center rounded-full bg-black/5 border border-black/10">
+                <img src="https://raw.githubusercontent.com/imAbhishekRao/Photos_storage_for_clients/eaaf3a5d8c6fbfea928537419323a9fd3dc8456b/phone.svg" alt="phone" className="h-5 w-5" />
               </div>
-              <div className="ml-[18px]">
-                <a href="tel:+911800123444" className="text-[14px] font-medium text-white">
-                +91 7740064839
+              <div className="ml-4">
+                <a href="tel:+917740064839" className="text-[15px] font-semibold text-black hover:text-orange-600 transition">
+                  +91 7740064839
                 </a>
-                <p className="text-[12px] font-medium text-white">Support Number</p>
+                <p className="text-[12px] font-medium text-gray-500">Support Number</p>
               </div>
             </div>
 
             {/* Email */}
             <div className="flex items-center">
-              <div className="flex h-[38px] w-[38px] items-center justify-center rounded-full bg-white/10">
-               <img src="https://raw.githubusercontent.com/imAbhishekRao/Photos_storage_for_clients/eaaf3a5d8c6fbfea928537419323a9fd3dc8456b/email.svg" alt="" />
+              <div className="flex h-[40px] w-[40px] items-center justify-center rounded-full bg-black/5 border border-black/10">
+                <img src="https://raw.githubusercontent.com/imAbhishekRao/Photos_storage_for_clients/eaaf3a5d8c6fbfea928537419323a9fd3dc8456b/email.svg" alt="email" className="h-5 w-5" />
               </div>
-              <div className="ml-[18px]">
-                <a href="mailto:help@lorem.com" className="text-[14px] font-medium text-white">
-                thestudywave.com@gmail.com
+              <div className="ml-4">
+                <a href="mailto:thestudywave.com@gmail.com" className="text-[15px] font-semibold text-black hover:text-orange-600 transition">
+                  thestudywave.com@gmail.com
                 </a>
-                <p className="text-[12px] font-medium text-white">Email us anytime</p>
+                <p className="text-[12px] font-medium text-gray-500">Email us anytime</p>
               </div>
             </div>
+          </div>
+        </div>
+
+        {/* Bottom bar */}
+        <div className="mt-10 border-t border-black/10 pt-6 flex flex-col md:flex-row items-center justify-between gap-3 text-sm text-gray-600">
+          <p> {new Date().getFullYear()} The StudyWave. All rights reserved.</p>
+          <div className="flex gap-4">
+            <a href="#" className="hover:text-black hover:underline underline-offset-4">Privacy</a>
+            <a href="#" className="hover:text-black hover:underline underline-offset-4">Terms</a>
+            <a href="#" className="hover:text-black hover:underline underline-offset-4">Contact</a>
           </div>
         </div>
       </div>
