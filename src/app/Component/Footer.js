@@ -21,7 +21,7 @@ export const Footer = () => {
               <span className="text-black">Wave</span>
             </h1>
             <p className="mt-3 text-[15px] leading-7 text-gray-600">
-              We are committed to empowering learners and educators by creating seamless, impactful digital experiences. Whether you're here to teach, learn, or grow — our platform is designed to support you every step of the way.
+              We are committed to empowering learners and educators by creating seamless, impactful digital experiences. Whether you are here to teach, learn, or grow — our platform is designed to support you every step of the way.
             </p>
 
             {/* Social Media Links */}
