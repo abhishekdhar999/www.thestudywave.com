@@ -4,7 +4,7 @@ import ClassCard from "../Component/ClassCard/ClassCard.js"
 import { classes, users } from "../Database/db.js";
 import Navbar from "../Component/Navbar/Navbar.js";
 import { Footer } from "../Component/Footer.js";
-import Link from "next/link.js";
+import Link from "next/link";
 
 export default function TodayClasses() {
   const [todayClasses, setTodayClasses] = useState([]);
@@ -65,7 +65,7 @@ export default function TodayClasses() {
             <p className={`mt-3 text-base md:text-lg text-gray-700`}>
               Here are your classes for today <span className="align-middle">🎒✨</span>
               <span className="ml-2 inline-block bg-orange-200 text-orange-900 px-3 py-1 rounded-full border border-black/10 font-semibold">
-                Let’s go!
+                Lets go!
               </span>
             </p>
             {quote && (
