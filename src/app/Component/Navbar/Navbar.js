@@ -10,7 +10,7 @@ const DynaPuffs = DynaPuff({
   subsets: ['latin'],
   display: 'swap',
 });
-export default function Navbar({ onAboutClick, navBgClass = "bg-white/30", navBorderClass = "border-gray-200" }) {
+export default function Navbar({ navBgClass = "bg-white/30", navBorderClass = "border-gray-200" }) {
   const [isLoggedIn, setIsLoggedIn] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
   const router = useRouter()
@@ -24,6 +24,17 @@ export default function Navbar({ onAboutClick, navBgClass = "bg-white/30", navBo
     localStorage.removeItem('token')
     setIsLoggedIn(false)
     router.push('/')
+  }
+
+  const handleClassesClick = (event, options = { closeMenu: false }) => {
+    if (options.closeMenu) {
+      setMenuOpen(false)
+    }
+    if (!isLoggedIn) {
+      event.preventDefault()
+      alert('Please log in to view classes.')
+      router.push('/Login')
+    }
   }
 
   return (
@@ -58,15 +69,21 @@ export default function Navbar({ onAboutClick, navBgClass = "bg-white/30", navBo
     {/* Desktop Navigation Links */}
     <nav className="hidden md:flex items-center space-x-6 text-black">
       <Link href="/" className="link hover:text-red-500 font-semibold ">Home</Link>
+      <Link href="/OurMission" className="link hover:text-gray-500 font-semibold">Our Mission</Link>
       {isLoggedIn ? (
         <>
-          <div onClick={onAboutClick} className="link  font-semibold cursor-pointer">About</div>
-          <Link href="/TodayClasses" className=" link hover:text-gray-500 font-semibold">Classes</Link>
+          <Link href="/About" className="link hover:text-gray-500 font-semibold">About</Link>
+          <Link href="/TodayClasses" onClick={(e) => handleClassesClick(e)} className=" link hover:text-gray-500 font-semibold">Classes</Link>
           <Link href="/ContactPage" className="link hover:text-gray-500 font-semibold">Contact</Link>
           <div onClick={handleLogout} className="link inline-flex items-center justify-center text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg text-sm px-4 py-2 text-center">Logout</div>
         </>
       ) : (
-        <Link href="/Login" className="link inline-flex items-center justify-center text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg text-sm px-4 py-2 text-center">Login</Link>
+        <>
+          <Link href="/About" className="link hover:text-gray-500 font-semibold">About</Link>
+          <Link href="/TodayClasses" onClick={(e) => handleClassesClick(e)} className=" link hover:text-gray-500 font-semibold">Classes</Link>
+          <Link href="/ContactPage" className="link hover:text-gray-500 font-semibold">Contact</Link>
+          <Link href="/Login" className="link inline-flex items-center justify-center text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg text-sm px-4 py-2 text-center">Login</Link>
+        </>
       )}
     </nav>
     
@@ -78,15 +95,21 @@ export default function Navbar({ onAboutClick, navBgClass = "bg-white/30", navBo
   <div id="mobile-menu" className="md:hidden fixed top-[64px] left-0 z-[999] w-full px-4 sm:px-6">
     <div className={`flex flex-col gap-3 ${navBgClass} backdrop-blur-md border ${navBorderClass} shadow-md rounded-2xl px-4 py-4 mx-4`}>
       <Link href="/" onClick={() => setMenuOpen(false)} className="link font-semibold text-black">Home</Link>
+      <Link href="/OurMission" onClick={() => setMenuOpen(false)} className="link font-semibold text-black">Our Mission</Link>
       {isLoggedIn ? (
         <>
-          <div onClick={() => { setMenuOpen(false); onAboutClick?.(); }} className="link font-semibold text-black cursor-pointer">About</div>
-          <Link href="/TodayClasses" onClick={() => setMenuOpen(false)} className="link font-semibold text-black">Classes</Link>
+          <Link href="/About" onClick={() => setMenuOpen(false)} className="link font-semibold text-black">About</Link>
+          <Link href="/TodayClasses" onClick={(e) => handleClassesClick(e, { closeMenu: true })} className="link font-semibold text-black">Classes</Link>
           <Link href="/ContactPage" onClick={() => setMenuOpen(false)} className="link font-semibold text-black">Contact</Link>
           <button onClick={() => { setMenuOpen(false); handleLogout(); }} className="mt-2 w-full inline-flex items-center justify-center text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg text-sm px-4 py-2 text-center">Logout</button>
         </>
       ) : (
-        <Link href="/Login" onClick={() => setMenuOpen(false)} className="mt-2 w-full inline-flex items-center justify-center text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg text-sm px-4 py-2 text-center">Login</Link>
+        <>
+          <Link href="/About" onClick={() => setMenuOpen(false)} className="link font-semibold text-black">About</Link>
+          <Link href="/TodayClasses" onClick={(e) => handleClassesClick(e, { closeMenu: true })} className="link font-semibold text-black">Classes</Link>
+          <Link href="/ContactPage" onClick={() => setMenuOpen(false)} className="link font-semibold text-black">Contact</Link>
+          <Link href="/Login" onClick={() => setMenuOpen(false)} className="mt-2 w-full inline-flex items-center justify-center text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg text-sm px-4 py-2 text-center">Login</Link>
+        </>
       )}
     </div>
   </div>
