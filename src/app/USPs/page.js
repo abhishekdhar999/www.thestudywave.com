@@ -1,6 +1,7 @@
 "use client"
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 // import Review from "../Components/Reviews";
 const programs = [
   {
@@ -105,16 +106,18 @@ const StudyPrograms = () => {
             )}
 
             {/* Button */}
-            <motion.button
-  className="relative z-10 w-full px-6 py-2 rounded-md text-black font-semibold transition-colors border-2 border-orange-500 hover:bg-orange-500"
-  whileHover={{
-    backgroundColor: "#f97316",
-    color: "#fff",
-    borderColor: "#f97316",
-  }}
->
-  Book a Free Class ↗
-</motion.button>
+            <Link href="/ContactPage">
+              <motion.button
+                className="relative z-10 w-full px-6 py-2 rounded-md text-black font-semibold transition-colors border-2 border-orange-500 hover:bg-orange-500"
+                whileHover={{
+                  backgroundColor: "#f97316",
+                  color: "#fff",
+                  borderColor: "#f97316",
+                }}
+              >
+                Book a Free Class ↗
+              </motion.button>
+            </Link>
 
           </div>
         </div>

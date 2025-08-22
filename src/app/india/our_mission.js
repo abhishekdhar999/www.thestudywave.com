@@ -1,9 +1,9 @@
-'use client';
+"use client";
 
-import React from 'react';
-import { motion } from 'framer-motion';
-import { DynaPuff } from 'next/font/google';
-import Link from 'next/link';
+import React from "react";
+import { motion } from "framer-motion";
+import { DynaPuff } from "next/font/google";
+import Link from "next/link";
 
 const DynaPuffs = DynaPuff({
   weight: '400',
@@ -38,14 +38,14 @@ export const MissionSection = () => {
         {/* Mission Content */}
         <div className="w-full max-w-6xl mx-auto z-10">
           {/* Page Header */}
-                      <div className="text-center mb-12">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-black leading-tight">
-                StudyWave <span className="text-orange-500">India</span>
-              </h1>
-              <p className={`mt-4 text-xl text-gray-600 ${DynaPuffs.className}`}>
-                Redefining education with global excellence, tailored for Indian students
-              </p>
-            </div>
+          <div className="text-center mb-12">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-black leading-tight">
+              StudyWave <span className="text-orange-500">India</span>
+            </h1>
+            <p className={`mt-4 text-xl text-gray-600 ${DynaPuffs.className}`}>
+              Redefining education with global excellence, tailored for Indian students
+            </p>
+          </div>
 
           {/* Mission Sections */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
@@ -65,9 +65,9 @@ export const MissionSection = () => {
                 <li>The skills to crack the toughest exams.</li>
                 <li>The mindset to aim higher than they ever imagined.</li>
               </ul>
-                              <p className="text-gray-700 mt-4 font-semibold">
-                  When a student studies with us, they don&apos;t just earn marks; they gain power.
-                </p>
+              <p className="text-gray-700 mt-4 font-semibold">
+                When a student studies with us, they don&apos;t just earn marks; they gain power.
+              </p>
             </motion.div>
 
             {/* From India to the World */}
@@ -78,9 +78,9 @@ export const MissionSection = () => {
               transition={{ duration: 0.5, delay: 0.1 }}
             >
               <h2 className="text-2xl font-bold text-orange-500 mb-4">From India to the World</h2>
-                              <p className="text-gray-700">
-                  We&apos;ve already helped students achieve top results abroad. Our methods have proven effective in the toughest international exams. Now, we&apos;re bringing that same energy to Indian classrooms. Think of this as India&apos;s education revolution, driven by global excellence.
-                </p>
+              <p className="text-gray-700">
+                We&apos;ve already helped students achieve top results abroad. Our methods have proven effective in the toughest international exams. Now, we&apos;re bringing that same energy to Indian classrooms. Think of this as India&apos;s education revolution, driven by global excellence.
+              </p>
             </motion.div>
           </div>
 
