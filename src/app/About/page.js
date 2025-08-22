@@ -1,8 +1,9 @@
-"use client";
-import React, { useEffect } from "react";
-import Navbar from "../Component/Navbar/Navbar";
-import { Footer } from "../Component/Footer";
-import "./AboutSection.css";
+'use client';
+import React, { useEffect } from 'react';
+import Link from 'next/link';
+import Navbar from '../Component/Navbar/Navbar';
+import { Footer } from '../Component/Footer';
+import './AboutSection.css';
 
 export default function AboutPage() {
   useEffect(() => {
@@ -11,16 +12,16 @@ export default function AboutPage() {
       entries.forEach((entry) => {
         const el = entry.target;
         if (entry.isIntersecting && el instanceof HTMLElement) {
-          el.style.opacity = "1";
-          el.style.transform = "translateY(0)";
+          el.style.opacity = '1';
+          el.style.transform = 'translateY(0)';
         }
       });
     }, { threshold: 0.1 });
     animatedElements.forEach((el) => {
       if (el instanceof HTMLElement) {
-        el.style.opacity = "0";
-        el.style.transform = "translateY(20px)";
-        el.style.transition = "opacity 0.6s ease, transform 0.6s ease";
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(20px)';
+        el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
         observer.observe(el);
       }
     });
@@ -73,7 +74,7 @@ export default function AboutPage() {
               <div className="about-card">
                 <h2><span>📖</span> Our Story</h2>
                 <p>The Study Wave began with a simple vision: to make quality education accessible and engaging for every student. What started as a small initiative has now grown into a global educational movement.</p>
-                <p>Founded by a team of educators and technologists, we've combined the best teaching methodologies with cutting-edge technology to create a learning experience that is both effective and enjoyable.</p>
+                <p>Founded by a team of educators and technologists, we&apos;ve combined the best teaching methodologies with cutting-edge technology to create a learning experience that is both effective and enjoyable.</p>
                 <p>From our first classroom to our current international presence, our commitment to student success has never wavered.</p>
               </div>
               <div className="about-card">
@@ -160,12 +161,14 @@ export default function AboutPage() {
             <div className="join-us">
               <h2>Join Our Educational Revolution</h2>
               <p>Become part of a growing community of learners, educators, and innovators who are reshaping the future of education.</p>
-              <p>Whether you're a student looking to excel or a parent seeking the best for your child, The Study Wave is here to support your journey.</p>
-              <button className="cta-button">Start Learning Today</button>
+                              <p>Whether you&apos;re a student looking to excel or a parent seeking the best for your child, The Study Wave is here to support your journey.</p>
+              <Link href="/ContactPage">
+                <button className="cta-button">Start Learning Today</button>
+              </Link>
             </div>
 
             <div className="back-home">
-              <a href="/">← Back to Home</a>
+              <Link href="/">← Back to Home</Link>
             </div>
           </div>
         </section>

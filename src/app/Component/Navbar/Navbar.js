@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
@@ -41,11 +41,11 @@ export default function Navbar({ navBgClass = "bg-white/30", navBorderClass = "b
     <>
     
     <div className="fixed top-0 z-[1000] w-full px-4 sm:px-6 lg:px-12 py-3">
-  <div className={`mx-auto max-w-[780px] flex justify-between items-center gap-4 ${navBgClass} backdrop-blur-md border ${navBorderClass} shadow-md rounded-full px-4 sm:px-5 py-2`}>
+  <div className={`mx-auto max-w-[1000px] flex justify-between items-center gap-8 ${navBgClass} backdrop-blur-md border ${navBorderClass} shadow-md rounded-full px-6 sm:px-8 py-3`}>
     
     {/* Logo Section */}
     
-    <nav className="text-xl font-bold text-black no-underline">
+    <nav className="text-xl font-bold text-black no-underline mr-4">
       <Link href="/" className={`link no-underline ${DynaPuffs.className}`}> <span className='text-black'>The</span><span className='text-orange-400 mx-2'>Study</span><span className='text-black'>Wave</span>
       </Link>
     </nav>
@@ -67,9 +67,9 @@ export default function Navbar({ navBgClass = "bg-white/30", navBorderClass = "b
     </button>
 
     {/* Desktop Navigation Links */}
-    <nav className="hidden md:flex items-center space-x-6 text-black">
+    <nav className="hidden md:flex items-center space-x-8 text-black">
       <Link href="/" className="link hover:text-red-500 font-semibold ">Home</Link>
-      <Link href="/OurMission" className="link hover:text-gray-500 font-semibold">Our Mission</Link>
+      <Link href="/india" className="link hover:text-gray-500 font-semibold">StudyWave India</Link>
       {isLoggedIn ? (
         <>
           <Link href="/About" className="link hover:text-gray-500 font-semibold">About</Link>
@@ -95,7 +95,7 @@ export default function Navbar({ navBgClass = "bg-white/30", navBorderClass = "b
   <div id="mobile-menu" className="md:hidden fixed top-[64px] left-0 z-[999] w-full px-4 sm:px-6">
     <div className={`flex flex-col gap-3 ${navBgClass} backdrop-blur-md border ${navBorderClass} shadow-md rounded-2xl px-4 py-4 mx-4`}>
       <Link href="/" onClick={() => setMenuOpen(false)} className="link font-semibold text-black">Home</Link>
-      <Link href="/OurMission" onClick={() => setMenuOpen(false)} className="link font-semibold text-black">Our Mission</Link>
+              <Link href="/india" onClick={() => setMenuOpen(false)} className="link font-semibold text-black">StudyWave India</Link>
       {isLoggedIn ? (
         <>
           <Link href="/About" onClick={() => setMenuOpen(false)} className="link font-semibold text-black">About</Link>

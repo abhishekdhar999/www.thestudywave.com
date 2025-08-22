@@ -47,11 +47,17 @@ export default function TodayClasses() {
     setTodayClasses(enriched);
   }, []);
 
-  // pick a random quote once on mount
+  // pick a quote based on visit timestamp - changes on each new visit
   useEffect(() => {
-    const idx = Math.floor(Math.random() * quotes.length);
+    // Get current timestamp and use it to select a quote
+    // This ensures different quotes on different visits
+    const timestamp = Date.now();
+    const idx = timestamp % quotes.length;
     setQuote(quotes[idx]);
-  }, []);
+    
+    // Log to verify quote selection (remove in production)
+    console.log(`Selected quote ${idx}: ${quotes[idx].text}`);
+  }, []); // Empty dependency array ensures this runs only once per component mount
 
   return (
     <>
