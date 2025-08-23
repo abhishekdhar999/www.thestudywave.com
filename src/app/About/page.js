@@ -117,20 +117,21 @@ export default function AboutPage() {
                     <p className="bio">Former educator with 15+ years of experience in curriculum development and educational technology.</p>
                   </div>
                 </div>
-                <div className="team-card">
-                  <div className="team-img">👩‍🏫</div>
-                  <div className="team-info">
-                    <h3>Aditi</h3>
-                    <p>Chief Academic Officer</p>
-                    <p className="bio">Education specialist with expertise in pedagogical innovation and student engagement strategies.</p>
-                  </div>
-                </div>
+                
                 <div className="team-card">
                   <div className="team-img">👨‍🎓</div>
                   <div className="team-info">
                     <h3>Dinesh Tariyal</h3>
                     <p>Chief Operating Officer</p>
                     <p className="bio">Tech innovator focused on creating seamless learning experiences through cutting-edge platforms.</p>
+                  </div>
+                </div>
+                <div className="team-card">
+                  <div className="team-img">👩‍🏫</div>
+                  <div className="team-info">
+                    <h3>Aditi</h3>
+                    <p>Chief Academic Officer</p>
+                    <p className="bio">Education specialist with expertise in pedagogical innovation and student engagement strategies.</p>
                   </div>
                 </div>
               </div>

@@ -4,6 +4,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { DynaPuff } from 'next/font/google';
 import Link from 'next/link';
+import { VideoReviewsSection } from '../Component/VideoReviewsSection';
 
 const DynaPuffs = DynaPuff({
   weight: '400',
@@ -137,6 +138,9 @@ export const MissionSection = () => {
               ))}
             </div>
           </motion.div>
+
+          {/* Video Reviews Section */}
+          <VideoReviewsSection />
 
           {/* Join The Wave Section */}
           <motion.div 
