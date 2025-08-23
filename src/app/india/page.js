@@ -1,6 +1,7 @@
 import Navbar from "../Component/Navbar/Navbar";
 import { Footer } from "../Component/Footer";
 import { MissionSection } from "./our_mission";
+import { VideoReviewsSection } from "../Component/VideoReviewsSection";
 
 export default function IndiaPage() {
   return (
@@ -9,6 +10,7 @@ export default function IndiaPage() {
                         <main className="w-full pt-24">
                     <MissionSection />
                   </main>
+      <VideoReviewsSection />
       <Footer />
     </>
   );

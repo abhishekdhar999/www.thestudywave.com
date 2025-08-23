@@ -7,6 +7,7 @@ import Navbar from './Component/Navbar/Navbar.js';
 import { HeroSection } from "./HeroSection/page";
 import USP from "../app/USPs/page";
 import AboutSection from "./About/Section";
+import VideoReviews from "./Component/VideoReviews";
 import { Footer } from "../app/Component/Footer.js";
 
 export default function Home() {
@@ -151,6 +152,9 @@ export default function Home() {
               }
             `}</style>
           </section>
+          
+          {/* Parent Video Reviews Section */}
+          <VideoReviews />
           
           <Footer />
         </main>

@@ -12,10 +12,10 @@ export const Footer = () => {
   return (
     <footer className={`mt-0 bg-neutral-50 border-t border-black/5 ${rubik.className}`}>
       <div className="mx-auto w-full max-w-[1166px] px-4 xl:px-0 py-12">
-        <div className="flex flex-col items-center justify-between gap-10 sm:px-[18px] md:flex-row md:px-10">
+        <div className="flex flex-col items-start justify-between gap-10 sm:px-[18px] md:flex-row md:px-10">
           {/* Logo and description */}
-          <div className="md:w-[420px] text-center">
-            <h1 className="text-2xl font-extrabold tracking-tight text-black text-center">
+          <div className="md:w-[420px] text-left">
+            <h1 className="text-2xl font-extrabold tracking-tight text-black text-left">
               <span className="text-black">The</span>
               <span className="text-orange-500 mx-2">Study</span>
               <span className="text-black">Wave</span>
@@ -25,13 +25,13 @@ export const Footer = () => {
             </p>
 
             {/* Social Media Links */}
-            <div className="mt-4 flex gap-3 justify-center">
+            <div className="mt-4 flex gap-3 justify-start">
               {[
-                { href: "#", src: "https://raw.githubusercontent.com/imAbhishekRao/Photos_storage_for_clients/927f44e824399f91b54143eefd52c488c68d6cd7/facebook.svg", alt: "facebook" },
+                { href: "https://www.facebook.com/profile.php?id=61563791097918", src: "https://raw.githubusercontent.com/imAbhishekRao/Photos_storage_for_clients/927f44e824399f91b54143eefd52c488c68d6cd7/facebook.svg", alt: "facebook" },
                 { href: "/", src: "https://raw.githubusercontent.com/imAbhishekRao/Photos_storage_for_clients/eaaf3a5d8c6fbfea928537419323a9fd3dc8456b/linkedin.svg", alt: "linkedin" },
-                { href: "/", src: "https://raw.githubusercontent.com/imAbhishekRao/Photos_storage_for_clients/eaaf3a5d8c6fbfea928537419323a9fd3dc8456b/instagram.svg", alt: "instagram" },
+                { href: "https://www.instagram.com/_thestudywave_/", src: "https://raw.githubusercontent.com/imAbhishekRao/Photos_storage_for_clients/eaaf3a5d8c6fbfea928537419323a9fd3dc8456b/instagram.svg", alt: "instagram" },
                 { href: "", src: "https://raw.githubusercontent.com/imAbhishekRao/Photos_storage_for_clients/eaaf3a5d8c6fbfea928537419323a9fd3dc8456b/twitter.svg", alt: "twitter" },
-                { href: "https://www.youtube.com/", src: "https://raw.githubusercontent.com/imAbhishekRao/Photos_storage_for_clients/eaaf3a5d8c6fbfea928537419323a9fd3dc8456b/youtube.svg", alt: "youtube" },
+                { href: "https://youtube.com/@thestudywave-h4i?si=mFbrgtHzkkKAgcOb", src: "https://raw.githubusercontent.com/imAbhishekRao/Photos_storage_for_clients/eaaf3a5d8c6fbfea928537419323a9fd3dc8456b/youtube.svg", alt: "youtube" },
               ].map(({ href, src, alt }) => (
                 <a
                   className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-black/10 bg-black/5 hover:bg-orange-50 hover:border-orange-200 transition"
