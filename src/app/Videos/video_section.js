@@ -21,7 +21,7 @@ export const VideoSection = () => {
     {
       id: 1,
       stars: 5,
-      text: "This platform completely changed my son's attitude towards math. The lessons are engaging and he's now top of his class!",
+      text: "This platform completely changed my son&apos;s attitude towards math. The lessons are engaging and he&apos;s now top of his class!",
       name: "FATEMA",
       details: "Mother of AMMAR\nAUSTRALIA",
       avatar: "F"

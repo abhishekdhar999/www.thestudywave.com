@@ -175,7 +175,7 @@ const VideoReviews = () => {
               
               {/* Review Text */}
               <p className="text-gray-700 text-lg italic mb-6 leading-relaxed">
-                "{review.text}"
+                &ldquo;{review.text}&rdquo;
               </p>
               
               {/* Reviewer Info */}

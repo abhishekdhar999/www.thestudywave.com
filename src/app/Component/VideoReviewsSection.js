@@ -21,7 +21,7 @@ export const VideoReviewsSection = () => {
     {
       id: 1,
       stars: 5,
-      text: "This platform completely changed my son's attitude towards math. The lessons are engaging and he's now top of his class!",
+      text: "This platform completely changed my son&apos;s attitude towards math. The lessons are engaging and he&apos;s now top of his class!",
       name: "FATEMA",
       details: "Mother of AMMAR\nAUSTRALIA",
       avatar: "F",
@@ -113,7 +113,7 @@ export const VideoReviewsSection = () => {
               {renderStars(review.stars)}
               
               <p className="text-gray-700 text-lg mb-6 italic leading-relaxed flex-grow">
-                "{review.text}"
+                &ldquo;{review.text}&rdquo;
               </p>
               
               <div className="flex items-center mt-auto">
