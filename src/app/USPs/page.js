@@ -1,15 +1,16 @@
 "use client"
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 // import Review from "../Components/Reviews";
 const programs = [
   {
-    title: "General Studies",
+    title: "Academic",
     subtitle: "Build Strong Foundations",
-    ageGroup: "6-12 years",
+    ageGroup: "6-16 years",
     color: "bg-orange-500",
     outcomes: [
-      "Master Math concepts with ease",
+      "Build strong academic foundation",
       "Improve English grammar and comprehension",
       "Explore Science through experiments",
     ],
@@ -17,9 +18,9 @@ const programs = [
       "https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/fc89ec4d20493fcf4d52b5aa09d0304733c63c50/Child-PNG-Image-1946477957%20(1).png?raw=true",
   },
   {
-    title: "Foundation",
+    title: "Computer Coding",
     subtitle: "Building Blocks of Technology",
-    ageGroup: "6-9 years",
+    ageGroup: "10-18 years",
     color: "bg-orange-500",
     outcomes: [
       "Build a robot to perform basic tasks",
@@ -105,16 +106,18 @@ const StudyPrograms = () => {
             )}
 
             {/* Button */}
-            <motion.button
-  className="relative z-10 w-full px-6 py-2 rounded-md text-black font-semibold transition-colors border-2 border-orange-500 hover:bg-orange-500"
-  whileHover={{
-    backgroundColor: "#f97316",
-    color: "#fff",
-    borderColor: "#f97316",
-  }}
->
-  Book a Free Class ↗
-</motion.button>
+            <Link href="/ContactPage">
+              <motion.button
+                className="relative z-10 w-full px-6 py-2 rounded-md text-black font-semibold transition-colors border-2 border-orange-500 hover:bg-orange-500"
+                whileHover={{
+                  backgroundColor: "#f97316",
+                  color: "#fff",
+                  borderColor: "#f97316",
+                }}
+              >
+                Book a Free Class ↗
+              </motion.button>
+            </Link>
 
           </div>
         </div>

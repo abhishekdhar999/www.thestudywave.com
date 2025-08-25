@@ -580,7 +580,7 @@ const users = [
     },
     {
       _id: "67f5218f57bbba5806a41e7f",
-      title: "Elina's Clasees",
+      title: "Elina&apos;s Clasees",
       teacher: "67f4e8f092e54d81ddd7bbe5",
       students: ["67f4ea1692e54d81ddd7bc00"],
       days: ["Tuesday", "Thursday", "Friday"],
@@ -637,7 +637,7 @@ const users = [
     },
     {
       _id: "67f5219257bbba5806a41e81",
-      title: "Dakshit's English Classes",
+      title: "Dakshit&apos;s English Classes",
       teacher: "67f4e8f092e54d81ddd7bbe5",
       students: ["67f5023957bbba5806a41e71"],
       days: ["Monday", "Tuesday", "Wednesday", "Thursday"],
@@ -664,7 +664,7 @@ const users = [
     },
     {
       _id: "67f5219457bbba5806a41e83",
-      title: "Arjun's Classes",
+      title: "Arjun&apos;s Classes",
       teacher: "67f4e8f092e54d81ddd7bbe5",
       students: ["67f502b757bbba5806a41e76"],
       days: ["Monday", "Friday"],
@@ -690,7 +690,7 @@ const users = [
     },
     {
       _id: "67f5219557bbba5806a41e85",
-      title: "Amaar's Classes",
+      title: "Amaar&apos;s Classes",
       teacher: "67f4e8f092e54d81ddd7bbe5",
       students: ["67f5030657bbba5806a41e79"],
       days: ["Monday", "Thursday", "Friday"],
@@ -718,10 +718,10 @@ const users = [
     },
       {
   _id: "67f4eef492e54d81ddd7bc99",
-  title: "Tanisha's Maths Class",
+  title: "Tanisha&apos;s Maths Class",
   teacher: "67f0c2cd9e13ec089d600b00", // Abhishek's ID
   students: ["67f0c2cd9e13ec089d600b01"], // Tanisha's ID
-  days: ["Monday", "Thursday", "Saturday"],
+  days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Saturday", "Sunday"],
   time: "10:00 PM - 11:00 PM",
   recurring: true,
   boardLink: "https://miro.com/app/board/uXjVJTMqsF4=/",
@@ -744,7 +744,7 @@ const users = [
 },
     {
       _id: "67f5235257bbba5806a41e87",
-      title: "Ansh's Classes",
+      title: "Ansh&apos;s Classes",
       teacher: "67f4e8f092e54d81ddd7bbe5",
       students: ["67f5034f57bbba5806a41e7c"],
       days: ["Monday", "Wednesday"],

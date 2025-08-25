@@ -32,7 +32,7 @@ export default function TodayClasses() {
     setLoggedInUser(user);
     const userId = user._id;
     const isTeacher = user.role === "Teacher";
-    const today = new Date().toLocaleDateString('en-US', { weekday: 'long' });
+    const today = new Date().toLocaleDateString("en-US", { weekday: "long" });
 
     const filtered = classes.filter(cls =>
       cls.days.includes(today) &&
@@ -47,11 +47,17 @@ export default function TodayClasses() {
     setTodayClasses(enriched);
   }, []);
 
-  // pick a random quote once on mount
+  // pick a quote based on visit timestamp - changes on each new visit
   useEffect(() => {
-    const idx = Math.floor(Math.random() * quotes.length);
+    // Get current timestamp and use it to select a quote
+    // This ensures different quotes on different visits
+    const timestamp = Date.now();
+    const idx = timestamp % quotes.length;
     setQuote(quotes[idx]);
-  }, []);
+    
+    // Log to verify quote selection (remove in production)
+    console.log(`Selected quote ${idx}: ${quotes[idx].text}`);
+  }, []); // Empty dependency array ensures this runs only once per component mount
 
   return (
     <>
@@ -60,7 +66,7 @@ export default function TodayClasses() {
         <div className="max-w-5xl mx-auto">
           <div className="mt-24">
             <h1 className={`text-3xl md:text-4xl font-bold text-black`}>
-              Hello <span className="text-orange-600">{loggedInUser?.name || 'there'}</span>, welcome to the class
+              Hello <span className="text-orange-600">{loggedInUser?.name || "there"}</span>, welcome to the class
             </h1>
             <p className={`mt-3 text-base md:text-lg text-gray-700`}>
               Here are your classes for today <span className="align-middle">🎒✨</span>
