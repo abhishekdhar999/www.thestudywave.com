@@ -25,8 +25,8 @@ console.log("found user",foundUser)
     sessionStorage.setItem('token', foundUser.refreshTokken);
     localStorage.setItem('token', foundUser.refreshTokken);
 
-    // ✅ Redirect
-    router.push('/');
+    // ✅ Redirect to Today's Classes
+    router.push('/TodayClasses');
   };
 
   return (
