@@ -5,7 +5,7 @@ import Link from "next/link";
 // import Review from "../Components/Reviews";
 const programs = [
   {
-    title: "Academics Studies",
+    title: "Academic",
     subtitle: "Build Strong Foundations",
     ageGroup: "6-16 years",
     color: "bg-orange-500",
@@ -18,7 +18,7 @@ const programs = [
       "https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/fc89ec4d20493fcf4d52b5aa09d0304733c63c50/Child-PNG-Image-1946477957%20(1).png?raw=true",
   },
   {
-    title: "Programmiing",
+    title: "Computer Coding",
     subtitle: "Building Blocks of Technology",
     ageGroup: "10-18 years",
     color: "bg-orange-500",

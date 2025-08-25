@@ -21,7 +21,7 @@ const VideoReviews = () => {
       id: 1,
       videoSrc: "/Videos/vid1.mp4",
       stars: 5,
-      text: "This platform completely changed my son&apos;s attitude towards math. The lessons are engaging and he&apos;s now top of his class!",
+      text: "This platform completely changed the attitude of my son towards math. The lessons are engaging and he&apos;s now top of his class!",
       name: "FATEMA",
       details: "Mother of AMMAR\nAUSTRALIA",
       initials: "F"
@@ -30,7 +30,7 @@ const VideoReviews = () => {
       id: 2,
       videoSrc: "/Videos/v2.mp4",
       stars: 4.5,
-      text: "A safe and incredibly useful resource. I feel good about my daughter spending her study time here.",
+      text: "A safe and incredibly useful resource. I feel good about my son spending his study time here.",
       name: "TANIA CLAUDE",
       details: "Mother of DARIUS\nFlorida, USA",
       initials: "TC"
@@ -41,16 +41,16 @@ const VideoReviews = () => {
       stars: 5,
       text: "The progress reports are fantastic. Finally, I can actually see where my child is excelling .",
       name: "VISHWAJEET SINGH RAWAT",
-      details: "Father of ELINA \n AUSTRALIA",
+      details: "Father of ELINA\nAUSTRALIA",
       initials: "VR"
     },
     {
       id: 4,
       videoSrc: "/Videos/vid4.mp4",
       stars: 5,
-      text: "My daughter went from struggling with science to winning her school science fair! TheStudyWave made learning fun.",
+      text: "My son's confidence improved greatly; mentor explains clearly, ensures understanding, and inspires curiosity.",
       name: "NISHA BHARGAV",
-      details: "Mother of ANSH \n AUSTRALIA",
+      details: "Mother of ANSH\nAUSTRALIA",
       initials: "NB"
     }
   ];
@@ -109,8 +109,11 @@ const VideoReviews = () => {
                              {/* Video */}
                <div className="mb-6 relative">
                                    <video 
-                    className="w-full h-64 rounded-lg object-cover"
-                    style={{ objectPosition: 'center 30%' }}
+                    className="w-full h-64 rounded-lg"
+                    style={{ 
+                      objectFit: 'contain',
+                      backgroundColor: '#000'
+                    }}
                     controls
                     preload="metadata"
                    onEnterPictureInPicture={(e) => {

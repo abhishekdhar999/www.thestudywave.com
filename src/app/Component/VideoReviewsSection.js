@@ -21,7 +21,7 @@ export const VideoReviewsSection = () => {
     {
       id: 1,
       stars: 5,
-      text: "This platform completely changed my son&apos;s attitude towards math. The lessons are engaging and he&apos;s now top of his class!",
+      text: "This platform completely changed the attitude of my son towards math. The lessons are engaging and he&apos;s now top of his class!",
       name: "FATEMA",
       details: "Mother of AMMAR\nAUSTRALIA",
       avatar: "F",
@@ -30,7 +30,7 @@ export const VideoReviewsSection = () => {
     {
       id: 2,
       stars: 4.5,
-      text: "A safe and incredibly useful resource. I feel good about my daughter spending her study time here.",
+      text: "A safe and incredibly useful resource. I feel good about my son spending his study time here.",
       name: "TANIA CLAUDE",
       details: "Mother of DARIUS\nFlorida, USA",
       avatar: "TC",
@@ -41,16 +41,16 @@ export const VideoReviewsSection = () => {
       stars: 5,
       text: "The progress reports are fantastic. Finally, I can actually see where my child is excelling .",
       name: "VISHWAJEET SINGH RAWAT",
-      details: "Father of ELINA \n AUSTRALIA",
+      details: "Father of ELINA\nAUSTRALIA",
       avatar: "VR",
       videoUrl: "/Videos/vid3.mp4"
     },
     {
       id: 4,
       stars: 5,
-      text: "My daughter went from struggling with science to winning her school science fair! TheStudyWave made learning fun.",
+      text: "My son's confidence improved greatly; mentor explains clearly, ensures understanding, and inspires curiosity.",
       name: "NISHA BHARGAV",
-      details: "Mother of ANSH \n AUSTRALIA",
+      details: "Mother of ANSH\nAUSTRALIA",
       avatar: "NB",
       videoUrl: "/Videos/vid4.mp4"
     }
@@ -101,7 +101,11 @@ export const VideoReviewsSection = () => {
               {/* Video Section */}
               <div className="mb-4">
                 <video 
-                  className="w-full h-64 rounded-lg object-cover"
+                  className="w-full h-64 rounded-lg"
+                  style={{ 
+                    objectFit: 'contain',
+                    backgroundColor: '#000'
+                  }}
                   controls
                   preload="metadata"
                 >
