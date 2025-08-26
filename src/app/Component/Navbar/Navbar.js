@@ -46,7 +46,7 @@ export default function Navbar({ navBgClass = "bg-white/30", navBorderClass = "b
     {/* Logo Section */}
     
     <nav className="text-xl font-bold text-black no-underline mr-4">
-      <Link href="/" className={`link no-underline ${DynaPuffs.className}`}> <span className='text-black'>The</span><span className='text-orange-400 mx-2'>Study</span><span className='text-black'>Wave</span>
+      <Link href="/" className={`link no-underline ${DynaPuffs.className} border-none`}> <span className='text-black'>The</span><span className='text-orange-400 mx-2'>Study</span><span className='text-black'>Wave</span>
       </Link>
     </nav>
 

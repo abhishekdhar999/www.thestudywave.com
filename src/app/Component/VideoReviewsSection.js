@@ -23,7 +23,9 @@ export const VideoReviewsSection = () => {
       stars: 5,
       text: "This platform completely changed the attitude of my son towards math. The lessons are engaging and he&apos;s now top of his class!",
       name: "FATEMA",
-      details: "Mother of AMMAR\nAUSTRALIA",
+      details: "Mother of AMMAR",
+      country: "AUSTRALIA",
+      flagSrc: "https://raw.githubusercontent.com/imAbhishekRao/Photos_storage_for_clients/4ff7da8c57243bf8f74ad935c4e48e6f8e6829cc/flag-for-flag-australia-svgrepo-com.svg",
       avatar: "F",
       videoUrl: "/Videos/vid1.mp4"
     },
@@ -32,7 +34,9 @@ export const VideoReviewsSection = () => {
       stars: 4.5,
       text: "A safe and incredibly useful resource. I feel good about my son spending his study time here.",
       name: "TANIA CLAUDE",
-      details: "Mother of DARIUS\nFlorida, USA",
+      details: "Mother of DARIUS",
+      country: "Florida, USA",
+      flagSrc: "https://raw.githubusercontent.com/imAbhishekRao/Photos_storage_for_clients/4ff7da8c57243bf8f74ad935c4e48e6f8e6829cc/flag-us-svgrepo-com.svg",
       avatar: "TC",
       videoUrl: "/Videos/v2.mp4"
     },
@@ -41,7 +45,9 @@ export const VideoReviewsSection = () => {
       stars: 5,
       text: "The progress reports are fantastic. Finally, I can actually see where my child is excelling .",
       name: "VISHWAJEET SINGH RAWAT",
-      details: "Father of ELINA\nAUSTRALIA",
+      details: "Father of ELINA",
+      country: "AUSTRALIA",
+      flagSrc: "https://raw.githubusercontent.com/imAbhishekRao/Photos_storage_for_clients/4ff7da8c57243bf8f74ad935c4e48e6f8e6829cc/flag-for-flag-australia-svgrepo-com.svg",
       avatar: "VR",
       videoUrl: "/Videos/vid3.mp4"
     },
@@ -50,7 +56,9 @@ export const VideoReviewsSection = () => {
       stars: 5,
       text: "My son's confidence improved greatly; mentor explains clearly, ensures understanding, and inspires curiosity.",
       name: "NISHA BHARGAV",
-      details: "Mother of ANSH\nAUSTRALIA",
+      details: "Mother of ANSH",
+      country: "AUSTRALIA",
+      flagSrc: "https://raw.githubusercontent.com/imAbhishekRao/Photos_storage_for_clients/4ff7da8c57243bf8f74ad935c4e48e6f8e6829cc/flag-for-flag-australia-svgrepo-com.svg",
       avatar: "NB",
       videoUrl: "/Videos/vid4.mp4"
     }
@@ -94,39 +102,48 @@ export const VideoReviewsSection = () => {
           style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
         >
           {reviews.map((review) => (
-            <div 
-              key={review.id}
-              className="flex-none w-80 bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
-            >
-              {/* Video Section */}
-              <div className="mb-4">
-                <video 
-                  className="w-full h-64 rounded-lg"
-                  style={{ 
-                    objectFit: 'contain',
-                    backgroundColor: '#000'
-                  }}
-                  controls
-                  preload="metadata"
-                >
-                  <source src={review.videoUrl} type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
-              </div>
+            <div key={review.id} className="flex-none w-80">
+              <div 
+                className="flex flex-col bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
+              >
+                {/* Video Section */}
+                <div className="mb-4">
+                  <video 
+                    className="w-full h-64 rounded-lg"
+                    style={{ 
+                      objectFit: 'contain',
+                      backgroundColor: '#000'
+                    }}
+                    controls
+                    preload="metadata"
+                  >
+                    <source src={review.videoUrl} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
 
-              {renderStars(review.stars)}
+                {renderStars(review.stars)}
+                
+                <p className="text-gray-700 text-lg mb-6 italic leading-relaxed h-32 overflow-hidden line-clamp-4">
+                  &ldquo;{review.text}&rdquo;
+                </p>
+              </div>
               
-              <p className="text-gray-700 text-lg mb-6 italic leading-relaxed flex-grow">
-                &ldquo;{review.text}&rdquo;
-              </p>
-              
-              <div className="flex items-center mt-auto">
+              <div className="flex items-center mt-4 p-4 bg-gray-100 rounded-b-2xl">
                 <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-lg mr-4">
                   {review.avatar}
                 </div>
                 <div>
                   <div className="font-semibold text-blue-600">{review.name}</div>
                   <div className="text-sm text-gray-500">{review.details}</div>
+                  <div className="text-sm text-gray-500 flex items-center gap-2">
+                    <span>{review.country}</span>
+                    <img 
+                      src={review.flagSrc} 
+                      alt={review.country}
+                      className="w-4 h-3 object-cover rounded-sm"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
