@@ -1,6 +1,7 @@
 // pages/create-meeting.js
 import { useState } from "react";
 import { DynaPuff } from "next/font/google";
+import EnglishClassBanner from "@/app/ImageOfEnglishClasses/main_image.png";
 
 const DynaPuffs = DynaPuff({
   weight: '400',
@@ -31,14 +32,32 @@ export default function CreateMeetingPage({classData}) {
 
 <div
     className="max-w-4xl sm:mx-auto md:mx-18 lg:mx-auto xl:mx-auto mt-6 bg-white shadow-2xl rounded-2xl ring-1 ring-black/5 text-gray-900 overflow-hidden">
-    <div className="rounded-t-2xl h-[220px] md:h-[300px] lg:h-[360px] overflow-hidden">
-      <img
-  className="object-cover object-top w-full" 
-  src={backgroundImgForToday} 
-  alt="Mountain" 
-  width={500} 
-  height={300} 
-/>
+    <div className="relative rounded-t-2xl h-[220px] md:h-[300px] lg:h-[360px] overflow-hidden bg-gray-100">
+      {(subjectForToday === 'English' && (classData.title.includes('Dakshit English') || classData.title === 'Aarits English Classes' || classData.title === 'Aarit Classes')) ? (
+        <div style={{ width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden' }}>
+          <img
+            src={EnglishClassBanner.src}
+            alt="English Class Banner"
+            style={{
+              width: '100%',
+              height: 'auto',
+              minHeight: '100%',
+              objectFit: 'cover',
+              objectPosition: 'center'
+            }}
+          />
+        </div>
+      ) : backgroundImgForToday ? (
+        <img
+          className="absolute inset-0 w-full h-full object-cover object-center"
+          src={backgroundImgForToday}
+          alt="Class Banner"
+        />
+      ) : (
+        <div className="w-full h-full bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center">
+          <span className="text-white text-xl font-bold">{classData.title}</span>
+        </div>
+      )}
     </div>
     <div className="text-center mt-3 px-6">
         <h2 className={`text-2xl md:text-3xl font-bold ${DynaPuffs.className}`}>{classData.title}</h2>

@@ -304,10 +304,7 @@ const users = [
       },
       daysAndBackgroungImg:{
         Tuesday: "https://marketplace.canva.com/EAFUOXXTZtU/1/0/1600w/canva-cute-white-welcome-to-math-class-youtube-intro-video-q2opAt8zpiM.jpg",
-       
-        Friday: "https://marketplace.canva.com/EAFUOXXTZtU/1/0/1600w/canva-cute-white-welcome-to-math-class-youtube-intro-video-q2opAt8zpiM.jpg"
-
-
+        Friday: "https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/main/Yellow%20and%20Red%20Illustrative%20Welcome%20to%20English%20Class%20Intro%20Video.jpg?raw=true"
       },
       studentName:"RYAN",
       
@@ -357,10 +354,7 @@ const users = [
         Tuesday: "Math",
       },
       daysAndBackgroungImg:{
-        Tuesday: "https://marketplace.canva.com/EAFUOXXTZtU/1/0/1600w/canva-cute-white-welcome-to-math-class-youtube-intro-video-q2opAt8zpiM.jpg",
-       
-
-
+        Tuesday: "https://marketplace.canva.com/EAFUOXXTZtU/1/0/1600w/canva-cute-white-welcome-to-math-class-youtube-intro-video-q2opAt8zpiM.jpg"
       },
       studentName:"SAHAJ & SAHANA",
       
@@ -387,9 +381,7 @@ const users = [
       daysAndBackgroungImg:{
         Tuesday: "https://marketplace.canva.com/EAFUOXXTZtU/1/0/1600w/canva-cute-white-welcome-to-math-class-youtube-intro-video-q2opAt8zpiM.jpg",
         Thursday: "https://marketplace.canva.com/EAFUOXXTZtU/1/0/1600w/canva-cute-white-welcome-to-math-class-youtube-intro-video-q2opAt8zpiM.jpg",
-        Friday: "https://marketplace.canva.com/EAFUOXXTZtU/1/0/1600w/canva-cute-white-welcome-to-math-class-youtube-intro-video-q2opAt8zpiM.jpg"
-
-
+        Friday: "https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/main/Yellow%20and%20Red%20Illustrative%20Welcome%20to%20English%20Class%20Intro%20Video.jpg?raw=true"
       },
       studentName:"SKAND",
       
@@ -580,7 +572,7 @@ const users = [
     },
     {
       _id: "67f5218f57bbba5806a41e7f",
-      title: "Elina&apos;s Clasees",
+      title: "Elina Classes",
       teacher: "67f4e8f092e54d81ddd7bbe5",
       students: ["67f4ea1692e54d81ddd7bc00"],
       days: ["Tuesday", "Thursday", "Friday"],
@@ -637,7 +629,7 @@ const users = [
     },
     {
       _id: "67f5219257bbba5806a41e81",
-      title: "Dakshit&apos;s English Classes",
+      title: "Dakshit English Classes",
       teacher: "67f4e8f092e54d81ddd7bbe5",
       students: ["67f5023957bbba5806a41e71"],
       days: ["Monday", "Tuesday", "Wednesday", "Thursday"],
@@ -664,7 +656,7 @@ const users = [
     },
     {
       _id: "67f5219457bbba5806a41e83",
-      title: "Arjun&apos;s Classes",
+      title: "Arjun Classes",
       teacher: "67f4e8f092e54d81ddd7bbe5",
       students: ["67f502b757bbba5806a41e76"],
       days: ["Monday", "Friday"],
@@ -690,7 +682,7 @@ const users = [
     },
     {
       _id: "67f5219557bbba5806a41e85",
-      title: "Amaar&apos;s Classes",
+      title: "Amaar Classes",
       teacher: "67f4e8f092e54d81ddd7bbe5",
       students: ["67f5030657bbba5806a41e79"],
       days: ["Monday", "Thursday", "Friday"],
@@ -718,7 +710,7 @@ const users = [
     },
       {
   _id: "67f4eef492e54d81ddd7bc99",
-  title: "Tanisha&apos;s Maths Class",
+  title: "Tanisha Maths Class",
   teacher: "67f0c2cd9e13ec089d600b00", // Abhishek's ID
   students: ["67f0c2cd9e13ec089d600b01"], // Tanisha's ID
   days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Saturday", "Sunday"],
@@ -744,7 +736,7 @@ const users = [
 },
     {
       _id: "67f5235257bbba5806a41e87",
-      title: "Ansh&apos;s Classes",
+      title: "Ansh Classes",
       teacher: "67f4e8f092e54d81ddd7bbe5",
       students: ["67f5034f57bbba5806a41e7c"],
       days: ["Monday", "Wednesday"],
