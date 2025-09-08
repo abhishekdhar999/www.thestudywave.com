@@ -65,7 +65,7 @@ export const Footer = () => {
               </div>
               <div className="ml-4">
                 <a href="mailto:thestudywave.com@gmail.com" className="text-[15px] font-semibold text-black hover:text-orange-600 transition">
-                  thestudywave.com@gmail.com
+                  info@thestudywave.com
                 </a>
                 <p className="text-[12px] font-medium text-gray-500">Email us anytime</p>
               </div>
