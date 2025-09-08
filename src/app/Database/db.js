@@ -713,7 +713,7 @@ const users = [
   title: "Tanisha Maths Class",
   teacher: "67f0c2cd9e13ec089d600b00", // Abhishek's ID
   students: ["67f0c2cd9e13ec089d600b01"], // Tanisha's ID
-  days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Saturday", "Sunday"],
+  days: ["Monday", "Thursday", "Saturday"],
   time: "10:00 PM - 11:00 PM",
   recurring: true,
   boardLink: "https://miro.com/app/board/uXjVJTMqsF4=/",
