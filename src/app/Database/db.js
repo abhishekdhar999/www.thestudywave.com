@@ -281,6 +281,20 @@ const users = [
       "__v": 0,
       "refreshTokken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiIxNCIsImVtYWlsIjoiMTRAZXhhbXBsZS5jb20ifQ.n14"
     }
+{
+      "_id": "67f0c2cd9e13ec089d600b02",
+      "name": "Varun",
+      "email": "varun@studywave.com",
+      "password": "Varun@Demo123",
+      "phoneNumber": 9876543301,
+      "role": "Student",
+      "subjects": ["Math"],
+      "createdAt": "2025-09-15T10:00:00.000+00:00",
+      "updatedAt": "2025-09-15T10:00:00.000+00:00",
+      "__v": 0,
+      "refreshTokken": "eyJhbGciOaUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOaUxNyIsImVtYWlsIjoidmFydW5Ac3R1ZHl3YXZlLmNvbSJ9.v17",
+      "isVerifiedUser": true
+    }
   ]
   
   const classes = [
@@ -760,6 +774,30 @@ const users = [
       },
       studentName:"ANSH",
     
+    },
+{
+      _id: "67f0c2cd9e13ec089d600c00",
+      title: "Varun Demo Class",
+      teacher: "67f0c2cd9e13ec089d600b00", // Abhishek Rao's ID
+      students: ["67f0c2cd9e13ec089d600b02"], // Varun's ID
+      days: ["Monday", "Friday"],
+      time: "2:00 PM - 3:00 PM",
+      recurring: true,
+      boardLink: "https://miro.com/welcomeonboard/eWlNMjVMMFJtamtFZVBXYm5GamhOTHJrRHZFQU5sektRZTZjSGRPQ3BZcTljSFUra21JMDBYVzZJVUVyMUJzMFV1bVlNWktCcCs0dWgxSWRZcmhoOTE4MC9SZzlGN29qN2dPTnplT3k5WHpPYUo1L0p2Ykh5blJkNEwvRExMRGZQdGo1ZEV3bUdPQWRZUHQzSGl6V2NBPT0hdjE=?share_link_id=676468285660",
+      meetingLink: "https://meet.google.com/pok-dfsm-xrd",
+      meetingId: "pok-dfsm-xrd",
+      passcode: "",
+      createdAt: "2025-09-15T10:30:00.000+00:00",
+      __v: 0,
+      daysAndSubjects: {
+        Tuesday: "Math",
+        Friday: "Math"
+      },
+      daysAndBackgroungImg: {
+        Tuesday: "https://marketplace.canva.com/EAFUOXXTZtU/1/0/1600w/canva-cute-white-welcome-to-math-class-youtube-intro-video-q2opAt8zpiM.jpg",
+        Friday: "https://marketplace.canva.com/EAFUOXXTZtU/1/0/1600w/canva-cute-white-welcome-to-math-class-youtube-intro-video-q2opAt8zpiM.jpg"
+      },
+      studentName: "VARUN"
     },
   ];
 
