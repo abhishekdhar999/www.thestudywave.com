@@ -798,7 +798,7 @@ const users = [
         
       studentName: "VARUN",
     },
-  ];
+  ]
 
   // Normalize teacherName on every class from the authoritative users list
   // Always overwrite to avoid stale or incorrect values in data
