@@ -786,7 +786,7 @@ const users = [
       boardLink: "https://miro.com/welcomeonboard/eWlNMjVMMFJtamtFZVBXYm5GamhOTHJrRHZFQU5sektRZTZjSGRPQ3BZcTljSFUra21JMDBYVzZJVUVyMUJzMFV1bVlNWktCcCs0dWgxSWRZcmhoOTE4MC9SZzlGN29qN2dPTnplT3k5WHpPYUo1L0p2Ykh5blJkNEwvRExMRGZQdGo1ZEV3bUdPQWRZUHQzSGl6V2NBPT0hdjE=?share_link_id=676468285660",
       meetingLink: "https://meet.google.com/pok-dfsm-xrd",
       meetingId: "pok-dfsm-xrd",
-      passcode: "",
+      passcode: "kuchbhi",
       createdAt: "2025-09-15T10:30:00.000+00:00",
       __v: 0,
       daysAndSubjects: {
