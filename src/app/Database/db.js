@@ -776,29 +776,28 @@ const users = [
     
     },
 {
-      _id: "67f0c2cd9e13ec089d600c00",
-      title: "Varun Maths Class",
-      teacher: "67f0c2cd9e13ec089d600b00", // Abhishek Rao's ID
-      students: ["67f0c2cd9e13ec089d600b02"], // Varun's ID
-      days: ["Sunday"],
-      time: "2:00 PM - 3:00 PM",
-      recurring: true,
-      boardLink: "https://miro.com/welcomeonboard/eWlNMjVMMFJtamtFZVBXYm5GamhOTHJrRHZFQU5sektRZTZjSGRPQ3BZcTljSFUra21JMDBYVzZJVUVyMUJzMFV1bVlNWktCcCs0dWgxSWRZcmhoOTE4MC9SZzlGN29qN2dPTnplT3k5WHpPYUo1L0p2Ykh5blJkNEwvRExMRGZQdGo1ZEV3bUdPQWRZUHQzSGl6V2NBPT0hdjE=?share_link_id=676468285660",
-      meetingLink: "https://meet.google.com/pok-dfsm-xrd",
-      meetingId: "pok-dfsm-xrd",
-      passcode: "kuchbhi",
-      createdAt: "2025-09-15T10:30:00.000+00:00",
-      __v: 0,
-      daysAndSubjects: {
-        Sunday: "Math",
-       
-      },
-      daysAndBackgroungImg: {
-       Sunday: "https://marketplace.canva.com/EAFUOXXTZtU/1/0/1600w/canva-cute-white-welcome-to-math-class-youtube-intro-video-q2opAt8zpiM.jpg",
-        
-      studentName: "VARUN",
+    _id: "67f0c2cd9e13ec089d600c00",
+    title: "Varun Maths Class",
+    teacher: "67f0c2cd9e13ec089d600b00", // Abhishek Rao's ID
+    students: ["67f0c2cd9e13ec089d600b02"], // Varun's ID
+    days: ["Sunday"],
+    time: "2:00 PM - 3:00 PM",
+    recurring: true,
+    boardLink: "https://miro.com/welcomeonboard/eWlNMjVMMFJtamtFZVBXYm5GamhOTHJrRHZFQU5sektRZTZjSGRPQ3BZcTljSFUra21JMDBYVzZJVUVyMUJzMFV1bVlNWktCcCs0dWgxSWRZcmhoOTE4MC9SZzlGN29qN2dPTnplT3k5WHpPYUo1L0p2Ykh5blJkNEwvRExMRGZQdGo1ZEV3bUdPQWRZUHQzSGl6V2NBPT0hdjE=?share_link_id=676468285660",
+    meetingLink: "https://meet.google.com/pok-dfsm-xrd",
+    meetingId: "pok-dfsm-xrd",
+    passcode: "kuchbhi",
+    createdAt: "2025-09-15T10:30:00.000+00:00",
+    __v: 0,
+    daysAndSubjects: {
+      Sunday: "Math",
     },
-  ]
+    daysAndBackgroungImg: {
+      Sunday: "https://marketplace.canva.com/EAFUOXXTZtU/1/0/1600w/canva-cute-white-welcome-to-math-class-youtube-intro-video-q2opAt8zpiM.jpg",
+    },
+    studentName: "VARUN" // MOVED to be a property of the class object
+}, // <-- THE MISSING CLOSING BRACE has been added here
+]
 
   // Normalize teacherName on every class from the authoritative users list
   // Always overwrite to avoid stale or incorrect values in data
