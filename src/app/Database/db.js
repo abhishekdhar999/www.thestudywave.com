@@ -796,7 +796,7 @@ const users = [
       daysAndBackgroungImg: {
        Sunday: "https://marketplace.canva.com/EAFUOXXTZtU/1/0/1600w/canva-cute-white-welcome-to-math-class-youtube-intro-video-q2opAt8zpiM.jpg",
         
-      studentName: "VARUN"
+      studentName: "VARUN",
     },
   ];
 
