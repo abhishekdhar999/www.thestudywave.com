@@ -129,7 +129,7 @@ export default function AboutPage() {
                 <div className="team-card">
                   <div className="team-img">👩‍🏫</div>
                   <div className="team-info">
-                    <h3>Aditi</h3>
+                    <h3>Kalpana Tariyal</h3>
                     <p>Chief Academic Officer</p>
                     <p className="bio">Education specialist with expertise in pedagogical innovation and student engagement strategies.</p>
                   </div>
