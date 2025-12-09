@@ -1,5 +1,20 @@
 const users = [
     {
+  "_id": "67f0c2cd9e13ec089d600b04",
+  "name": "Sparsh",
+  "email": "sparsh@studywave.com",
+  "password": "Sparsh@Math789",          // dummy seed password – hash in real app
+  "phoneNumber": 9876543210,
+  "role": "Student",
+  "subjects": ["Maths"],
+  "createdAt": "2025-12-09T12:00:00.000+00:00",
+  "updatedAt": "2025-12-09T12:00:00.000+00:00",
+  "__v": 0,
+  "refreshTokken":
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiIxOSIsImVtYWlsIjoic3BhcnNoQHN0dWR5d2F2ZS5jb20ifQ.sp19",
+  "isVerifiedUser": true
+},
+ {
 "_id": "67f0c2cd9e13ec089d600b00",
   "name": "Abhishek Rao",
   "email": "abhishek@studywave.com",
@@ -313,7 +328,32 @@ const users = [
   ]
   
   const classes = [
-    {
+  {
+  _id: "67f4eef492e54d81ddd7bc98",
+  title: "Sparsh Maths Classes",
+  teacher: "67f4e8f092e54d81ddd7bbe5", // Mohit Tariyal
+  students: ["67f0c2cd9e13ec089d600b04"], // Sparsh's ID
+  days: ["Tuesday", "Friday"],
+  time: "7:00 PM - 8:00 PM",
+  recurring: true,
+  boardLink: "https://app.idroo.com/boards/cV2khjetHA",
+  meetingLink: "https://us06web.zoom.us/j/86091599181?pwd=R17dmAEemDWskwFQ09VISs0LlRtIrC.1",
+  meetingId: "860 9159 9181",
+  passcode: "",
+  createdAt: "2025-12-09T12:05:00.000+00:00",
+  __v: 0,
+  daysAndSubjects: {
+    Tuesday: "Maths",
+    Friday: "Maths"
+  },
+  daysAndBackgroungImg: {
+    Tuesday: "https://marketplace.canva.com/EAFUOXXTZtU/1/0/1600w/canva-cute-white-welcome-to-math-class-youtube-intro-video-q2opAt8zpiM.jpg",
+    Friday: "https://marketplace.canva.com/EAFUOXXTZtU/1/0/1600w/canva-cute-white-welcome-to-math-class-youtube-intro-video-q2opAt8zpiM.jpg"
+  },
+  studentName: "SPARSH"
+},
+
+      {
       _id: "67f4eef492e54dgerg81ddd7bc03",
       title: "Ryan Classes",
       teacher: "67f4e8f092e54d81ddd7bbe5",
