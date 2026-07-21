@@ -323,6 +323,34 @@ const users = [
     "__v": 0,
     "refreshTokken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiIxOCIsImVtYWlsIjoic2lyaUBzdHVkeXdhdmUuY29tIn0.s18",
     "isVerifiedUser": true
+},
+{
+    "_id": "67f0c2cd9e13ec089d600b10",
+    "name": "Manish Kumar",
+    "email": "manish@studywave.com",
+    "password": "Manish@Math123",
+    "phoneNumber": 9876543310,
+    "role": "Teacher",
+    "subjects": ["Math"],
+    "createdAt": "2026-07-21T00:00:00.000+00:00",
+    "updatedAt": "2026-07-21T00:00:00.000+00:00",
+    "__v": 0,
+    "refreshTokken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiIyMCIsImVtYWlsIjoibWFuaXNoQHN0dWR5d2F2ZS5jb20ifQ.m20",
+    "isVerifiedUser": true
+},
+{
+    "_id": "67f0c2cd9e13ec089d600b11",
+    "name": "Krituik",
+    "email": "krituik@studywave.com",
+    "password": "Krituik@Math123",
+    "phoneNumber": 9876543311,
+    "role": "Student",
+    "subjects": ["Math"],
+    "createdAt": "2026-07-21T00:00:00.000+00:00",
+    "updatedAt": "2026-07-21T00:00:00.000+00:00",
+    "__v": 0,
+    "refreshTokken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiIyMSIsImVtYWlsIjoia3JpdHVpa0BzdHVkeXdhdmUuY29tIn0.k21",
+    "isVerifiedUser": true
 }
   ]
   
@@ -848,7 +876,6 @@ const users = [
     },
     studentName: "Sparsh"
 },
-// -------- NEW CLASSES ADDED HERE --------
 {
     _id: "67f5235257bbba5806a41e88",
     title: "Siri Maths Class",
@@ -896,6 +923,32 @@ const users = [
         Saturday: "https://github.com/imAbhishekRao/Photos_storage_for_clients/blob/main/Yellow%20and%20Red%20Illustrative%20Welcome%20to%20English%20Class%20Intro%20Video.jpg?raw=true"
     },
     studentName: "SIRI"
+},
+// -------- NEW CLASSES ADDED HERE --------
+{
+    _id: "67f0c2cd9e13ec089d600c30",
+    title: "Krituik Grade 6 Maths Class",
+    teacher: "67f0c2cd9e13ec089d600b10", // Manish Kumar
+    students: ["67f0c2cd9e13ec089d600b11"], // Krituik
+    // Friday EST = Saturday IST (class at 3:30–4:30 AM IST)
+    days: ["Friday", "Saturday"],
+    time: "3:30 AM - 4:30 AM",
+    recurring: true,
+    boardLink: "https://app.idroo.com/boards/RRZrJ872p5",
+    meetingLink: "https://meet.google.com/tqj-mnvr-sam",
+    meetingId: "tqj-mnvr-sam",
+    passcode: "",
+    createdAt: "2026-07-21T00:00:00.000+00:00",
+    __v: 0,
+    daysAndSubjects: {
+        Friday: "Math",
+        Saturday: "Math"
+    },
+    daysAndBackgroungImg: {
+        Friday: "https://marketplace.canva.com/EAFUOXXTZtU/1/0/1600w/canva-cute-white-welcome-to-math-class-youtube-intro-video-q2opAt8zpiM.jpg",
+        Saturday: "https://marketplace.canva.com/EAFUOXXTZtU/1/0/1600w/canva-cute-white-welcome-to-math-class-youtube-intro-video-q2opAt8zpiM.jpg"
+    },
+    studentName: "KRITUIK"
 }
 ]
 
