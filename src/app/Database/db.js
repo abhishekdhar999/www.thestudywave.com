@@ -255,9 +255,9 @@ const users = [
     },
     {
       "_id": "67f502b757bbba5806a41e76",
-      "name": "Arjun",
-      "email": "arjun@studywave.com",
-      "password": "arjunW@6qT",
+      "name": "Madhav",
+      "email": "madhav@studywave.com",
+      "password": "madhavW@6qT",
       "phoneNumber": 9876543210,
       "isVerifiedUser": true,
       "role": "Student",
@@ -725,10 +725,10 @@ const users = [
     },
     {
       _id: "67f5219457bbba5806a41e83",
-      title: "Arjun Classes",
+      title: "Madhav Classes",
       teacher: "67f4e8f092e54d81ddd7bbe5",
       students: ["67f502b757bbba5806a41e76"],
-      days: ["Monday", "Friday"],
+      days: ["Tuesday", "Thursday"],
       date: "2025-03-24T00:00:00.000+00:00",
       time: "4:00 PM - 5:00 PM",
       recurring: true,
@@ -739,14 +739,14 @@ const users = [
       createdAt: "2025-04-08T13:16:04.102+00:00",
       __v: 0,
       daysAndSubjects: {
-        Monday:"Math",
-        Friday: "Math"
+        Tuesday:"Math",
+        Thursday: "Math"
       },
       daysAndBackgroungImg:{
-        Monday:"https://marketplace.canva.com/EAFUOXXTZtU/1/0/1600w/canva-cute-white-welcome-to-math-class-youtube-intro-video-q2opAt8zpiM.jpg",
-        Friday: "https://marketplace.canva.com/EAFUOXXTZtU/1/0/1600w/canva-cute-white-welcome-to-math-class-youtube-intro-video-q2opAt8zpiM.jpg"
+        Tuesday:"https://marketplace.canva.com/EAFUOXXTZtU/1/0/1600w/canva-cute-white-welcome-to-math-class-youtube-intro-video-q2opAt8zpiM.jpg",
+        Thursday: "https://marketplace.canva.com/EAFUOXXTZtU/1/0/1600w/canva-cute-white-welcome-to-math-class-youtube-intro-video-q2opAt8zpiM.jpg"
       },
-      studentName:"ARJUN",
+      studentName:"MADHAV",
       
     },
     {
