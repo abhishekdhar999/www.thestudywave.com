@@ -1,0 +1,750 @@
+/* Class Invoice Generator — every rule is scoped under .invGen so it cannot
+   leak into the rest of the site (Tailwind preflight, globals.css, etc.). */
+
+.invGen {
+  --navy: #1e2a69;
+  --navy-ink: #22307a;
+  --cyan: #24c0e4;
+  --teal: #3e9fcb;
+  --coral: #e06a5f;
+  --note-bg: #a9e9f5;
+  --note-red: #e8412f;
+  --ribbon: #e1352b;
+
+  --ui-bg: #edf0f6;
+  --ui-panel: #ffffff;
+  --ui-line: #dce2ec;
+  --ui-mute: #697187;
+
+  --font: var(--font-quicksand), "Quicksand", "Trebuchet MS", ui-rounded, system-ui, sans-serif;
+
+  font-family: var(--font);
+  background: var(--ui-bg);
+  color: var(--navy-ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+.invGen * {
+  box-sizing: border-box;
+}
+
+/* ---------------- App shell ---------------- */
+.invGen .app {
+  display: grid;
+  grid-template-columns: 390px 1fr;
+  height: 100vh;
+}
+
+.invGen .panel {
+  background: var(--ui-panel);
+  border-right: 1px solid var(--ui-line);
+  overflow-y: auto;
+  padding: 22px 22px 60px;
+}
+.invGen .brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 22px;
+}
+.invGen .brand-dot {
+  width: 26px;
+  height: 26px;
+  flex: none;
+  border-radius: 9px;
+  background: linear-gradient(135deg, var(--cyan), var(--navy));
+}
+.invGen .brand h1 {
+  font-size: 15px;
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  color: var(--navy-ink);
+}
+.invGen .brand span {
+  display: block;
+  font-size: 11px;
+  color: var(--ui-mute);
+  font-weight: 500;
+}
+.invGen .toprow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+.invGen .backlink {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--ui-mute);
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+}
+.invGen .backlink:hover {
+  color: var(--navy-ink);
+}
+
+/* ---------------- Password gate ---------------- */
+.invGen .gate {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+.invGen .gate-card {
+  width: 100%;
+  max-width: 340px;
+  background: var(--ui-panel);
+  border: 1px solid var(--ui-line);
+  border-radius: 18px;
+  box-shadow: 0 18px 50px rgba(24, 36, 80, 0.1);
+  padding: 26px 24px 22px;
+}
+.invGen .gate-card .brand {
+  margin-bottom: 20px;
+}
+.invGen .gate-btn {
+  width: 100%;
+  margin-top: 4px;
+  padding: 10px 12px;
+  font-size: 13px;
+}
+.invGen .gate-btn:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+.invGen .gate-error {
+  margin: 0 0 10px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--note-red);
+}
+.invGen .gate-back {
+  display: block;
+  margin-top: 16px;
+  text-align: center;
+}
+
+.invGen fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0 0 26px;
+  min-width: 0;
+}
+.invGen legend {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: var(--ui-mute);
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+.invGen label.f {
+  display: block;
+  margin-bottom: 10px;
+}
+.invGen label.f > span {
+  display: block;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--ui-mute);
+  margin-bottom: 4px;
+}
+.invGen input[type="text"],
+.invGen input[type="number"],
+.invGen textarea,
+.invGen select {
+  width: 100%;
+  font-family: var(--font);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--navy-ink);
+  background: #f7f9fc;
+  border: 1px solid var(--ui-line);
+  border-radius: 9px;
+  padding: 8px 10px;
+}
+.invGen textarea {
+  resize: vertical;
+  min-height: 58px;
+  font-weight: 600;
+}
+.invGen input:focus-visible,
+.invGen textarea:focus-visible,
+.invGen select:focus-visible,
+.invGen button:focus-visible {
+  outline: 2px solid var(--cyan);
+  outline-offset: 1px;
+}
+.invGen .row {
+  display: grid;
+  gap: 10px;
+}
+.invGen .row-2 {
+  grid-template-columns: 1fr 1fr;
+}
+.invGen .row-3 {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.invGen button {
+  font-family: var(--font);
+  cursor: pointer;
+  border: 0;
+  font-weight: 700;
+}
+.invGen .btn {
+  background: #eef2f9;
+  color: var(--navy-ink);
+  border: 1px solid var(--ui-line);
+  border-radius: 9px;
+  padding: 8px 12px;
+  font-size: 12px;
+}
+.invGen .btn:hover {
+  background: #e3eaf5;
+}
+.invGen .btn-primary {
+  background: var(--navy);
+  color: #fff;
+  border-color: var(--navy);
+}
+.invGen .btn-primary:hover {
+  background: #182155;
+}
+.invGen .btn-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+/* calendar */
+.invGen .cal-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+.invGen .cal-head strong {
+  font-size: 13px;
+}
+.invGen .nav {
+  background: #eef2f9;
+  border: 1px solid var(--ui-line);
+  border-radius: 8px;
+  width: 28px;
+  height: 26px;
+  font-size: 13px;
+  color: var(--navy-ink);
+}
+.invGen .dow {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+  margin-bottom: 4px;
+}
+.invGen .dow button {
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--ui-mute);
+  background: transparent;
+  padding: 3px 0;
+  border-radius: 6px;
+}
+.invGen .dow button:hover {
+  background: #eef2f9;
+  color: var(--navy-ink);
+}
+.invGen .grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+}
+.invGen .day {
+  aspect-ratio: 1 / 1;
+  border-radius: 8px;
+  background: #f4f7fb;
+  border: 1px solid transparent;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--navy-ink);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.invGen .day:hover {
+  border-color: var(--cyan);
+}
+.invGen .day.on {
+  background: var(--navy);
+  color: #fff;
+}
+.invGen .day.blank {
+  background: transparent;
+  pointer-events: none;
+}
+
+/* line items */
+.invGen .items {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.invGen .item {
+  border: 1px solid var(--ui-line);
+  border-radius: 10px;
+  padding: 8px;
+  background: #fbfcfe;
+}
+.invGen .item-top {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+.invGen .item-top .date {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--ui-mute);
+  letter-spacing: 0.4px;
+}
+.invGen .item-top .x {
+  margin-left: auto;
+  background: transparent;
+  color: #b4bccb;
+  font-size: 15px;
+  line-height: 1;
+  padding: 2px 4px;
+}
+.invGen .item-top .x:hover {
+  color: var(--coral);
+}
+.invGen .item input[type="text"] {
+  margin-bottom: 6px;
+}
+.invGen .empty {
+  font-size: 12px;
+  color: var(--ui-mute);
+  font-weight: 600;
+  margin: 0;
+  padding: 10px 0;
+}
+
+.invGen label.chk {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--navy-ink);
+  cursor: pointer;
+}
+.invGen label.chk input {
+  accent-color: var(--navy);
+  width: 15px;
+  height: 15px;
+}
+.invGen input[type="range"] {
+  accent-color: var(--navy);
+  width: 100%;
+}
+
+.invGen .hint {
+  font-size: 11px;
+  color: var(--ui-mute);
+  font-weight: 600;
+  line-height: 1.5;
+  margin: 8px 0 0;
+}
+
+/* ---------------- Preview ---------------- */
+.invGen .stage {
+  overflow: auto;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.invGen .toolbar {
+  width: 100%;
+  max-width: 794px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+.invGen .toolbar .spacer {
+  flex: 1;
+}
+.invGen .scaler {
+  transform-origin: top center;
+  transform: scale(var(--scale, 1));
+}
+
+/* ---------------- The invoice page ---------------- */
+.invGen .page {
+  width: 794px;
+  height: 1123px;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 18px 50px rgba(24, 36, 80, 0.16);
+}
+.invGen .deco {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.invGen .head {
+  position: absolute;
+  left: 76px;
+  top: 96px;
+  color: #fff;
+}
+.invGen .head .big {
+  font-size: 62px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  line-height: 1;
+  margin: 0;
+  color: #f6f4ee;
+}
+.invGen .head .no {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 6px;
+  margin-top: 12px;
+}
+
+.invGen .card {
+  position: absolute;
+  left: 44px;
+  right: 44px;
+  top: 238px;
+  bottom: 56px;
+  background: #fff;
+  border-radius: 26px;
+  box-shadow: 0 10px 34px rgba(24, 36, 80, 0.1);
+  display: flex;
+  flex-direction: column;
+  padding: 34px 44px 30px;
+}
+
+.invGen .to {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.invGen .to .lbl {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--navy-ink);
+}
+.invGen .to .phone {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--navy-ink);
+  letter-spacing: 0.3px;
+}
+.invGen .client {
+  font-size: 29px;
+  font-weight: 700;
+  color: var(--navy-ink);
+  margin: 8px 0 0 28px;
+}
+
+.invGen .tbl-wrap {
+  margin-top: 44px;
+  position: relative;
+}
+.invGen .tbl-shadow {
+  position: absolute;
+  top: -14px;
+  left: 120px;
+  right: 60px;
+  height: 22px;
+  background: linear-gradient(180deg, rgba(30, 42, 105, 0.11), rgba(30, 42, 105, 0));
+  border-radius: 3px;
+}
+.invGen table {
+  width: 100%;
+  border-collapse: collapse;
+  position: relative;
+}
+.invGen thead th {
+  font-size: 19px;
+  font-weight: 700;
+  color: var(--navy-ink);
+  padding: 0 0 8px;
+  border-bottom: 2px solid var(--navy);
+}
+.invGen thead th.desc {
+  text-align: left;
+  width: 46%;
+}
+.invGen tbody td {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--navy-ink);
+  padding: 9px 0;
+  text-align: center;
+}
+.invGen tbody td.desc {
+  text-align: left;
+  padding-left: 18px;
+}
+.invGen tbody tr:first-child td {
+  padding-top: 26px;
+}
+
+.invGen .totals {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.invGen .bonus {
+  width: 56%;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--navy-ink);
+  padding-bottom: 7px;
+  border-bottom: 2px solid var(--navy);
+}
+.invGen .total {
+  width: 56%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 9px 0;
+  border-bottom: 2px solid var(--navy);
+}
+.invGen .total b {
+  font-size: 21px;
+  font-weight: 700;
+  text-align: center;
+  color: var(--navy-ink);
+}
+
+.invGen .rule {
+  height: 2px;
+  background: var(--navy);
+  margin: 20px -44px 0;
+}
+
+.invGen .note {
+  position: relative;
+  margin: 22px 0 6px;
+  padding-left: 70px;
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+}
+.invGen .note .txt {
+  background: var(--note-bg);
+  color: var(--note-red);
+  font-size: 19px;
+  font-weight: 700;
+  padding: 5px 12px;
+  border-radius: 4px;
+}
+.invGen .ribbon {
+  position: absolute;
+  left: -18px;
+  top: -6px;
+  width: 74px;
+  height: 74px;
+  overflow: hidden;
+}
+.invGen .ribbon i {
+  position: absolute;
+  left: -16px;
+  top: 22px;
+  width: 104px;
+  transform: rotate(-45deg);
+  background: var(--ribbon);
+  color: #fff;
+  font-style: normal;
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  text-align: center;
+  padding: 3px 0;
+}
+.invGen .ribbon::before,
+.invGen .ribbon::after {
+  content: "";
+  position: absolute;
+  border: 5px solid #9e1e17;
+}
+.invGen .ribbon::before {
+  left: 0;
+  top: 44px;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+}
+.invGen .ribbon::after {
+  left: 44px;
+  top: 0;
+  border-left-color: transparent;
+  border-top-color: transparent;
+}
+
+/* brand + watermark + footer */
+.invGen .brandname {
+  position: absolute;
+  right: 52px;
+  top: 112px;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 7px;
+  text-decoration-thickness: 2px;
+}
+.invGen .card > :not(.wm) {
+  position: relative;
+  z-index: 1;
+}
+.invGen .wm {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 330px;
+  max-height: 330px;
+  object-fit: contain;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.invGen .foot {
+  display: grid;
+  grid-template-columns: 1fr 1.05fr 1.05fr;
+  gap: 14px;
+  align-items: start;
+  margin-top: 16px;
+}
+.invGen .foot .pill {
+  display: inline-block;
+  background: linear-gradient(90deg, #f58529, #dd2a7b, #8134af);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  padding: 3px 10px;
+  border-radius: 5px;
+  margin-bottom: 7px;
+}
+.invGen .foot .link {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--navy-ink);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.invGen .foot h4 {
+  margin: 0 0 5px;
+  font-size: 19px;
+  font-weight: 700;
+  color: var(--navy-ink);
+}
+.invGen .foot .small {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--navy-ink);
+  line-height: 1.6;
+}
+.invGen .foot svg {
+  flex: none;
+}
+.invGen .icoWrap {
+  flex: none;
+  width: 21px;
+  height: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.invGen .icoWrap svg,
+.invGen .icoWrap img {
+  width: 21px;
+  height: 21px;
+  object-fit: contain;
+  display: block;
+}
+.invGen .hide {
+  display: none !important;
+}
+
+/* ---------------- Print ---------------- */
+@page {
+  size: A4;
+  margin: 0;
+}
+@media print {
+  /* strip the surrounding site chrome (floating WhatsApp button, etc.) */
+  body:has(> .invGen) {
+    background: #fff;
+  }
+  body:has(> .invGen) > *:not(.invGen) {
+    display: none !important;
+  }
+  .invGen .app {
+    display: block;
+    height: auto;
+  }
+  .invGen .panel,
+  .invGen .toolbar {
+    display: none !important;
+  }
+  .invGen .stage {
+    padding: 0;
+    display: block;
+    overflow: visible;
+  }
+  .invGen .scaler {
+    transform: none !important;
+    height: auto !important;
+  }
+  .invGen .page {
+    box-shadow: none;
+    width: 210mm;
+    height: 297mm;
+  }
+  .invGen .card {
+    box-shadow: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .invGen .app {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+  .invGen .panel {
+    border-right: 0;
+    border-bottom: 1px solid var(--ui-line);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .invGen * {
+    transition: none !important;
+    animation: none !important;
+  }
+}
